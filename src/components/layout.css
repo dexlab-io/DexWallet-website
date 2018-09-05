@@ -1,0 +1,55 @@
+@media screen and (min-width: 1472px) {
+  .container {
+    max-width: 960px;
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 960px;
+    width: 960px;
+  }
+}
+.primary-font {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+  border-radius: 0.375rem !important;
+}
+
+input {
+  border-radius: 0.375rem !important;
+}
+
+.is-size-3 {
+  font-size: 1.5rem !important; /* 24px */
+}
+
+.is-size-4 {
+  font-size: 1.25rem !important; /* 20px */
+}
+
+.is-size-5 {
+  font-size: 1.125rem !important; /* 18px */
+}
+
+.is-size-6 {
+  font-size: 0.875rem !important; /* 14px */
+}
+
+.is-size-7 {
+  font-size: 0.75rem !important; /* 12px */
+}
+
+.has-text-light-grey {
+  color: #2e3c4f !important;
+}

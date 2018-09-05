@@ -1,0 +1,65 @@
+{
+  "name": "dexwallet-website",
+  "description": "Dexwallet Website, bundled with awesome GatsbyJs v2.",
+  "version": "2.0.1",
+  "author": "Parminder Klair",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dexlab-io/DexWallet-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dexlab-io/DexWallet-website/issues"
+  },
+  "homepage": "https://github.com/dexlab-io/DexWallet-website#readme",
+  "scripts": {
+    "start": "npm run develop",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\"",
+    "format": "prettier-eslint --write \"src/**/*.{js,jsx,json,css,md}\""
+  },
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-nprogress": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-plugin-sitemap": "^1.2.25",
+    "gatsby-plugin-styled-components": "next",
+    "gatsby-source-prismic": "^1.1.0",
+    "gatsby-transformer-sharp": "next",
+    "polished": "^2.0.3",
+    "prismic-dom": "^2.1.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.4.5",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "8",
+    "babel-plugin-styled-components": "^1.5.1",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "gatsbyjs",
+    "javascript",
+    "graphql",
+    "graphql",
+    "reactjs",
+    "boilerplate"
+  ]
+}
