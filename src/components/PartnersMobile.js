@@ -6,13 +6,32 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 600px) {
     padding: 2rem 0rem;
   }
+  img {
+    max-width: 6.875rem;
+  }
+`;
+
+const ImageStyledOne = styled.img`
+  margin-top: -5%;
+`;
+
+const ImageStyledSeven = styled.img`
+  max-height: 5rem;
+`;
+
+const ImageStyledThree = styled.img`
+  margin-top: -5%;
+`;
+
+const ImageStyledNine = styled.img`
+  margin-top: 10%;
 `;
 
 const CollaboratorsMobile = () => (
   <Wrapper className="is-hidden-tablet">
     <div className="columns is-mobile">
       <div className="column">
-        <img src="/images/collabs/logo_vulpem@2x.png" alt="v" />
+        <ImageStyledOne src="/images/collabs/logo_vulpem@2x.png" alt="v" />
       </div>
       <div className="column">
         <img src="/images/collabs/logo_feng@2x.png" alt="fengshui" />
@@ -36,7 +55,10 @@ const CollaboratorsMobile = () => (
     </div>
     <div className="columns is-mobile">
       <div className="column">
-        <img src="/images/collabs/logo_rocket@2x.png" alt="rocketpool" />
+        <ImageStyledSeven
+          src="/images/collabs/logo_rocket@2x.png"
+          alt="rocketpool"
+        />
       </div>
       <div className="column">
         <img src="/images/collabs/logo_trivial@2x.png" alt="trivial" />
@@ -47,7 +69,10 @@ const CollaboratorsMobile = () => (
         <img src="/images/collabs/logo_poa@2x.png" alt="poa" />
       </div>
       <div className="column">
-        <img src="/images/collabs/logo_changelly@2x.png" alt="changely" />
+        <ImageStyledNine
+          src="/images/collabs/logo_changelly@2x.png"
+          alt="changely"
+        />
       </div>
     </div>
   </Wrapper>

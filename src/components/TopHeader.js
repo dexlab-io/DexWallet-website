@@ -5,11 +5,17 @@ import theme from '../utils/theme';
 
 const Wrapper = styled.nav`
   background-color: transparent;
+  .navbar-burger {
+    height: 4.25rem;
+  }
+  .navbar-burger:hover {
+    background-color: transparent;
+  }
 `;
 
 const NavBarContainer = styled.div`
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   .navbar-item img {
     max-height: 2.125rem !important;
   }
@@ -18,7 +24,7 @@ const NavBarContainer = styled.div`
 const LogoTextStyled = styled.span`
   font-size: 1.875rem;
   padding-left: 1.5625rem;
-  font-weight: 300;
+  font-weight: ${theme.fontRegular};
   color: ${theme.textColorBlack};
 `;
 

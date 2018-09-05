@@ -5,9 +5,9 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 
 import HomeHero from '../components/HomeHero';
-import Collaborators from '../components/Collaborators';
 import Features from '../components/Features';
-import GetOurLastUpdates from '../components/GetOurLastUpdates';
+import Newsletter from '../components/Newsletter';
+import Partners from '../components/Partners';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -20,9 +20,9 @@ export default class IndexPage extends React.Component {
           image={config.image}
         />
         <HomeHero />
-        <Collaborators />
+        <Partners />
         <Features />
-        <GetOurLastUpdates />
+        <Newsletter />
       </Layout>
     );
   }

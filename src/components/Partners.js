@@ -3,12 +3,20 @@ import styled from 'styled-components';
 
 import theme from '../utils/theme';
 
-import CollaboratorsMobile from './CollaboratorsMobile';
+import PartnersMobile from './PartnersMobile';
 
 const Container = styled.section`
   img {
-    max-height: 4rem;
+    max-height: 3.5rem;
   }
+  .container {
+      width: 80%;
+     
+    }
+  }
+.columns {
+  margin-bottom: 2% !important;
+}
 `;
 
 const TitleStyled = styled.div`
@@ -19,28 +27,17 @@ const TitleStyled = styled.div`
   }
 `;
 
-const ImageStyledOne = styled.img`
-  height: 3rem;
-`;
-
-const ImageStyledTwo = styled.img`
-  margin-top: 0.9rem;
-`;
-
-const Collaborators = () => (
+const Partners = () => (
   <Container className="section">
     <div className="container has-text-centered">
       <TitleStyled className="title has-text-light-grey is-size-6">
         Proudly building the DEX ecosystem with invaluable friends
       </TitleStyled>
-      <CollaboratorsMobile />
+      <PartnersMobile />
       <div className="is-hidden-mobile">
         <div className="columns">
           <div className="column">
-            <ImageStyledOne
-              src="/images/collabs/logo_loopring@2x.png"
-              alt="looper"
-            />
+            <img src="/images/collabs/logo_loopring@2x.png" alt="looper" />
           </div>
           <div className="column">
             <img src="/images/collabs/logo_ubiq@2x.png" alt="ubiq" />
@@ -69,10 +66,7 @@ const Collaborators = () => (
             <img src="/images/collabs/logo_trivial@2x.png" alt="trivial" />
           </div>
           <div className="column">
-            <ImageStyledTwo
-              src="/images/collabs/logo_changelly@2x.png"
-              alt="changely"
-            />
+            <img src="/images/collabs/logo_changelly@2x.png" alt="changely" />
           </div>
         </div>
       </div>
@@ -80,4 +74,4 @@ const Collaborators = () => (
   </Container>
 );
 
-export default Collaborators;
+export default Partners;
