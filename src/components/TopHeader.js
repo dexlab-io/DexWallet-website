@@ -68,17 +68,23 @@ class TopHeader extends React.Component {
 
           <div id="navbarExampleTransparentExample" className="navbar-menu">
             <div className="navbar-end  is-size-6">
+            {/*
               <div className="navbar-item">
-                <LinkStyled>About</LinkStyled>
+                <LinkStyled>Dexlab</LinkStyled>
               </div>
+            
               <div className="navbar-item">
                 <LinkStyled>Features</LinkStyled>
               </div>
+            */}
               <div className="navbar-item">
-                <LinkStyled>Blog</LinkStyled>
+                <LinkStyled href="https://medium.com/dexlab-io">Blog</LinkStyled>
               </div>
               <div className="navbar-item">
-                <LinkStyled>Contact Us</LinkStyled>
+                <LinkStyled href="https://dexwallet.freshdesk.com/">Support</LinkStyled>
+              </div>
+              <div className="navbar-item">
+                <LinkStyled href="mailto:founders@dexlab.io">Business Inquiries</LinkStyled>
               </div>
             </div>
           </div>

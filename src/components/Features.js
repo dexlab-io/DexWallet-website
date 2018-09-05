@@ -42,7 +42,7 @@ const Features = () => (
           <div className="title is-size-4">Ethereum Name Service</div>
           <div className="subtitle">
             Chat, send and receive funds in a new easy <br /> way with a human
-            readable address <br />(i.e. alessio.dexlab.io)
+            readable address <br />(i.e. alessio.dexlab.eth)
           </div>
         </div>
         <div className="column">
