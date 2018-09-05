@@ -70,7 +70,9 @@ class NewsletterForm extends React.Component {
             </p>
             <p className="control is-hidden-mobile">
               <ButtonWrapper className="button is-info is-medium">
-                <span className="is-size-6">SUBMIT</span>
+                <span className="is-size-6" type="submit" value="Submit">
+                  SUBMIT
+                </span>
               </ButtonWrapper>
             </p>
           </div>

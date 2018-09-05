@@ -6,9 +6,10 @@ import TopHeader from './TopHeader';
 import PreHeader from './PreHeader';
 
 const Container = styled.section`
-  background: url('/images/Header_bg@2x.png');
+  background: url('/images/header_bg.png');
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: 0% 20%;
   padding-top: 0rem;
   padding-bottom: 16rem;
   @media only screen and (max-width: 600px) {
@@ -54,12 +55,6 @@ const TextStyled = styled.div`
   font-family: ${theme.secondaryFont};
 `;
 
-const IphoneImageStyled = styled.img`
-  position: absolute;
-  max-height: 31rem;
-  top: 32%;
-  right: 4%;
-`;
 class HomeHero extends React.Component {
   state = {
     isVisible: true,
@@ -120,12 +115,7 @@ class HomeHero extends React.Component {
                     </div>
                   </StoreButtons>
                 </Wrapper>
-                <div className="column">
-                  <IphoneImageStyled
-                    src="/images/iphoneX_header_forefront.png"
-                    alt="iphonex"
-                  />
-                </div>
+                <div className="column" />
               </div>
             </div>
 
@@ -133,12 +123,7 @@ class HomeHero extends React.Component {
 
             <div className="is-hidden-tablet">
               <div className="columns">
-                <div className="column">
-                  <img
-                    src="/images/iphoneX_header_forefront.png"
-                    alt="iphonex"
-                  />
-                </div>
+                <div className="column" />
                 <Wrapper className="column is-two-thirds">
                   <h1 className="title is-size-1 has-text-black has-text-centered-mobile">
                     The only Wallet you need.
