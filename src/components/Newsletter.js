@@ -15,7 +15,7 @@ const Container = styled.section`
     padding-right: 1rem;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    padding: 2rem;
+    padding-bottom: 1rem;
   }
   .columns {
     margin-left: 0rem;
@@ -88,8 +88,10 @@ const PlaneImageStyled = styled.img`
     left: -30%;
   }
   @media only screen and (max-width: 1024px) and (min-width: 600px) {
-    top: 64%;
-    left: -13%;
+    position: absolute;
+    top: 8%;
+    left: 1.5%;
+    width: 26.5rem;
   }
 `;
 
@@ -104,7 +106,11 @@ const SocialContainer = styled.nav`
 
 const Newsletter = () => (
   <Container className="section">
-    <PlaneImageStyled src="/images/paperplane@2x.png" alt="plane" />
+    <PlaneImageStyled
+      className="is-hidden-tablet-only"
+      src="/images/paperplane@2x.png"
+      alt="plane"
+    />
     <div className="container">
       <div className="columns">
         <NewsletterForm />
