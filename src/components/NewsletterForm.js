@@ -17,7 +17,7 @@ const LabelStyled = styled.label`
   font-weight: ${theme.fontMedium};
 `;
 
-const ButtonWrapper = styled.a`
+const ButtonWrapper = styled.button`
   background-color: ${theme.primaryColor} !important;
   padding-left: 1.5em !important;
   padding-right: 1.5em !important;
@@ -31,7 +31,10 @@ const ButtonWrapper = styled.a`
 class NewsletterForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' };
+    this.state = {
+      email: '',
+      message: '',
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -39,19 +42,18 @@ class NewsletterForm extends React.Component {
 
   // 2. via `async/await`
   handleSubmit = async e => {
-    const { value } = this.state;
-    const result = await addToMailchimp(value);
-    // I recommend setting `result` to React state
-    // but you can do whatever you want
-    console.log(result);
+    const { email } = this.state;
     e.preventDefault();
+    const result = await addToMailchimp(email);
+    this.setState({ email: '', message: result.msg });
   };
 
   handleChange(event) {
-    this.setState({ value: event.target.value });
+    this.setState({ email: event.target.value });
   }
 
   render() {
+    const { message, email } = this.state;
     return (
       <div className="column has-text-white has-text-centered-mobile">
         <LabelStyled className="is-size-3 has-text-white ">
@@ -63,16 +65,18 @@ class NewsletterForm extends React.Component {
               <input
                 className="input is-medium is-size-7"
                 type="email"
-                value={this.state.value}
+                value={email}
                 placeholder="Your@email.here"
                 onChange={this.handleChange}
               />
             </p>
             <p className="control is-hidden-mobile">
-              <ButtonWrapper className="button is-info is-medium">
-                <span className="is-size-6" type="submit" value="Submit">
-                  SUBMIT
-                </span>
+              <ButtonWrapper
+                className="button is-info is-medium"
+                type="submit"
+                target="_parent"
+              >
+                <span className="is-size-6">SUBMIT</span>
               </ButtonWrapper>
             </p>
           </div>
@@ -83,6 +87,8 @@ class NewsletterForm extends React.Component {
             </CheckBoxTxt>
             <span className="checkmark" />
           </label>
+          <br />
+          <div className="">{message}</div>
         </form>
       </div>
     );

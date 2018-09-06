@@ -9,10 +9,17 @@ const Container = styled.section`
   background: url('/images/header_bg.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 0% 20%;
+
   padding-top: 0rem;
   padding-bottom: 16rem;
   @media only screen and (max-width: 600px) {
+    background: url('/images/mobile_bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    background-size: 125%;
     padding-bottom: 2rem;
   }
   .level-item {
@@ -49,6 +56,9 @@ const StoreButtons = styled.div`
 
 const Wrapper = styled.div`
   padding-top: 8%;
+  @media only screen and (max-width: 600px) {
+    padding-top: 118%;
+  }
 `;
 
 const TextStyled = styled.div`

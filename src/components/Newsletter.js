@@ -14,6 +14,9 @@ const Container = styled.section`
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 2rem;
+  }
   .columns {
     margin-left: 0rem;
     margin-right: 0rem;
