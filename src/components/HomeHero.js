@@ -6,21 +6,28 @@ import TopHeader from './TopHeader';
 import PreHeader from './PreHeader';
 
 const Container = styled.section`
-  background: url('/images/header_bg.png');
-  background-size: 100%;
+  background: url(/images/header_bg.png);
+  background-size: cover;
   background-repeat: no-repeat;
-
   padding-top: 0rem;
-  padding-bottom: 16rem;
+  padding-bottom: 19rem;
+  background-position: 0% 32%;
   @media only screen and (max-width: 600px) {
     background: url('/images/mobile_bg.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 2rem;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
+    background-size: cover%;
+    padding-bottom: 2rem;
+    background-position: 0% 0%;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
     background-size: 125%;
     padding-bottom: 2rem;
+    background-position: 0% 0%;
+    padding-bottom: 16rem;
   }
   .level-item {
   }
@@ -45,11 +52,11 @@ const Container = styled.section`
 `;
 
 const StoreButtons = styled.div`
-  padding-top: 2.1rem;
+  padding-top: 1.6rem;
   img {
     height: 2.5rem;
     @media only screen and (max-width: 600px) {
-      height: 3.1rem;
+      height: 3.3rem;
     }
   }
 `;

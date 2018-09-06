@@ -16,6 +16,7 @@ const Container = styled.section`
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     padding-bottom: 1rem;
+    padding-top: 2.5rem;
   }
   .columns {
     margin-left: 0rem;
@@ -82,16 +83,15 @@ const PlaneImageStyled = styled.img`
   position: absolute;
   top: 40%;
   left: 1.5%;
-  width: 26.5rem;
+  width: 22%;
   @media only screen and (max-width: 600px) {
     top: 10%;
     left: -30%;
-  }
-  @media only screen and (max-width: 1024px) and (min-width: 600px) {
-    position: absolute;
-    top: 8%;
-    left: 1.5%;
     width: 26.5rem;
+  }
+  @media only screen and (max-width: 1780px) {
+    top: 10%;
+    width: 22rem;
   }
 `;
 
