@@ -22,7 +22,6 @@ export default class IndexPage extends React.Component {
         <HomeHero />
         <Partners />
         <Features />
-        <Newsletter />
       </Layout>
     );
   }

@@ -5,6 +5,64 @@ import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 import theme from '../utils/theme';
 
+const Container = styled.div`
+  .field:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+  input {
+    border-color: transparent;
+    padding-bottom: calc(1.9em - 1px) !important;
+    padding-top: calc(1.9em - 1px) !important;
+    padding-left: calc(1.625em - 1px);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+  }
+  .field.is-grouped > .control:not(:last-child) {
+    @media only screen and (max-width: 600px) {
+      margin-right: 0rem !important;
+    }
+  }
+  .wrapper {
+    float: left;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: block;
+  }
+  .checkmark {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: ${theme.textColorWhite};
+    border-radius: 2px;
+  }
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  .wrapper input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .wrapper .checkmark:after {
+    left: 5px;
+    top: -1px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+`;
+
 const CheckBoxTxt = styled.span`
   font-weight: ${theme.fontMedium};
   font-size: 0.625rem;
@@ -54,11 +112,14 @@ class NewsletterForm extends React.Component {
 
   render() {
     const { message, email } = this.state;
+    const { isVisible } = this.props;
     return (
-      <div className="column has-text-white has-text-centered-mobile">
-        <LabelStyled className="is-size-3 has-text-white ">
-          Get our last updates
-        </LabelStyled>
+      <Container className="column has-text-white has-text-centered-mobile">
+        {isVisible ? (
+          <LabelStyled className="is-size-3 has-text-white ">
+            Get our last updates
+          </LabelStyled>
+        ) : null}
         <form onSubmit={this.handleSubmit}>
           <div className="field is-grouped">
             <p className="control is-expanded has-text-black">
@@ -90,7 +151,7 @@ class NewsletterForm extends React.Component {
           <br />
           <div className="">{message}</div>
         </form>
-      </div>
+      </Container>
     );
   }
 }

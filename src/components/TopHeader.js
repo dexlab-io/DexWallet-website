@@ -24,12 +24,12 @@ const NavBarContainer = styled.div`
 
 const LogoTextStyled = styled.span`
   font-size: 1.875rem;
-  padding-left: 1.5625rem;
+  padding-left: 1rem;
   font-weight: ${theme.fontRegular};
   color: ${theme.textColorBlack};
 `;
 
-const LinkStyled = styled.a`
+const LinkStyled = styled(Link)`
   color: ${theme.textColorBlack};
   padding-left: 1.5rem;
 `;
@@ -81,10 +81,10 @@ class TopHeader extends React.Component {
       <Wrapper className="navbar is-transparent">
         <NavBarContainer className="container">
           <div className="navbar-brand">
-            <a className="navbar-item">
+            <Link to="/" className="navbar-item">
               <img src="/images/DexWallet_Icon@2x.png" alt="DexWallet" />
               <LogoTextStyled>DexWallet</LogoTextStyled>
-            </a>
+            </Link>
             <a
               role="button"
               className={isActive ? 'navbar-burger is-active' : 'navbar-burger'}
@@ -113,7 +113,7 @@ class TopHeader extends React.Component {
                   {' '}
                   <li>Blog</li>
                 </Link>
-                <Link to="/">
+                <Link to="/terms-and-conditions/">
                   <li>Terms & Conditions</li>
                 </Link>
                 <Link to="/">
@@ -133,7 +133,9 @@ class TopHeader extends React.Component {
                 <LinkStyled href="#">Blog</LinkStyled>
               </div>
               <div className="navbar-item">
-                <LinkStyled href="#">Terms & Conditions</LinkStyled>
+                <LinkStyled to="/terms-and-conditions/">
+                  Terms & Conditions
+                </LinkStyled>
               </div>
               <div className="navbar-item">
                 <LinkStyled href="#"> Contact Us</LinkStyled>

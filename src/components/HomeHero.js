@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import theme from '../utils/theme';
 import TopHeader from './TopHeader';
 import PreHeader from './PreHeader';
+import Modal from './Modal';
 
 const Container = styled.section`
   background: url(/images/header_bg.png);
@@ -73,24 +74,23 @@ const TextStyled = styled.div`
 `;
 
 class HomeHero extends React.Component {
-  state = {
-    isVisible: true,
-  };
+  constructor(props) {
+    super(props);
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent);
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      isClicked: false,
+    };
   }
 
-  listenScrollEvent = () => {
-    if (window.scrollY > 90) {
-      this.setState({ isVisible: false });
-    } else {
-      this.setState({ isVisible: true });
-    }
-  };
+  handleClick() {
+    this.setState({
+      isClicked: !this.state.isClicked,
+    });
+  }
 
   render() {
-    const { isVisible } = this.state;
+    const { isClicked } = this.state;
 
     return (
       <React.Fragment>
@@ -98,6 +98,7 @@ class HomeHero extends React.Component {
         <Container className="section">
           <div className="container">
             <TopHeader />
+            <Modal isClicked={isClicked} handleClick={this.handleClick} />
             <div className="is-hidden-mobile">
               <div className="columns">
                 <Wrapper className="column is-two-thirds">
@@ -109,6 +110,7 @@ class HomeHero extends React.Component {
                     private keys and enjoy the power of blockchain in a new,
                     more free and fun way!
                   </h2>
+
                   <StoreButtons className="columns">
                     <div className="column is-one-quarter">
                       <nav className="level is-mobile">
@@ -116,12 +118,12 @@ class HomeHero extends React.Component {
                           <TextStyled className="">Get it now on</TextStyled>
                         </div>
                         <div className="level-item has-text-centered">
-                          <a href="#">
+                          <a onClick={this.handleClick}>
                             <img src="/images/iOs_button@2x.png" alt="ios" />
                           </a>
                         </div>
                         <div className="level-item has-text-centered">
-                          <a href="#">
+                          <a onClick={this.handleClick}>
                             <img
                               src="/images/play_button@2x.png"
                               alt="google-play"
@@ -157,12 +159,12 @@ class HomeHero extends React.Component {
                           <TextStyled className="">Get it now on</TextStyled>
                         </div>
                         <div className="level-item has-text-centered">
-                          <a href="#">
+                          <a onClick={this.handleClick}>
                             <img src="/images/iOs_button@2x.png" alt="ios" />
                           </a>
                         </div>
                         <div className="level-item has-text-centered">
-                          <a href="#">
+                          <a onClick={this.handleClick}>
                             <img
                               src="/images/play_button@2x.png"
                               alt="google-play"
