@@ -80,17 +80,22 @@ class HomeHero extends React.Component {
     this.handleClick = this.handleClick.bind (this);
     this.state = {
       isClicked: false,
+      platform: '',
     };
   }
 
-  handleClick () {
+  handleClick (e) {
+    const {platform} = e.target.dataset;
+    console.log (platform);
+    const {isClicked} = this.state;
     this.setState ({
-      isClicked: !this.state.isClicked,
+      isClicked: !isClicked,
+      platform,
     });
   }
 
   render () {
-    const {isClicked} = this.state;
+    const {isClicked, platform} = this.state;
 
     return (
       <React.Fragment>
@@ -98,7 +103,11 @@ class HomeHero extends React.Component {
         <Container className="section">
           <div className="container">
             <TopHeader />
-            <Modal isClicked={isClicked} handleClick={this.handleClick} />
+            <Modal
+              isClicked={isClicked}
+              platform={platform}
+              handleClick={this.handleClick}
+            />
             <div className="is-hidden-mobile">
               <div className="columns">
                 <Wrapper className="column is-two-thirds">
@@ -119,7 +128,11 @@ class HomeHero extends React.Component {
                         </div>
                         <div className="level-item has-text-centered">
                           <a onClick={this.handleClick}>
-                            <img src="/images/iOs_button@2x.png" alt="ios" />
+                            <img
+                              src="/images/iOs_button@2x.png"
+                              alt="ios"
+                              data-platform="Ios"
+                            />
                           </a>
                         </div>
                         <div className="level-item has-text-centered">
@@ -127,6 +140,7 @@ class HomeHero extends React.Component {
                             <img
                               src="/images/Play_button@2x.png"
                               alt="google-play"
+                              data-platform="Android"
                             />
                           </a>
                         </div>
@@ -160,7 +174,11 @@ class HomeHero extends React.Component {
                         </div>
                         <div className="level-item has-text-centered">
                           <a onClick={this.handleClick}>
-                            <img src="/images/iOs_button@2x.png" alt="ios" />
+                            <img
+                              src="/images/iOs_button@2x.png"
+                              alt="ios"
+                              data-platform="Ios"
+                            />
                           </a>
                         </div>
                         <div className="level-item has-text-centered">
@@ -168,6 +186,7 @@ class HomeHero extends React.Component {
                             <img
                               src="/images/Play_button@2x.png"
                               alt="google-play"
+                              data-platform="Android"
                             />
                           </a>
                         </div>

@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import NewsletterForm from './NewsletterForm';
 
 const Wrapper = styled.div`
+   .modal-background {
+    background-color: rgba(10, 10, 10, 0.45);
+  }
   .box-wrapper {
     position: relative;
   }
@@ -13,7 +16,7 @@ const Wrapper = styled.div`
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     color: #4a4a4a;
     display: block;
-    padding: 4rem 7rem 4rem 7rem;
+    padding: 4rem 7rem 6rem 7rem;
     @media only screen and (max-width: 600px) {
       padding: 3rem;
     }
@@ -21,6 +24,13 @@ const Wrapper = styled.div`
       display: block;
     }
   }
+`;
+
+const TextWrapper = styled.div`
+  .modal-heading {
+    letter-spacing: 3px !important;
+    padding-bottom: 0.6rem !important;
+}
 `;
 
 const CrossImageStyled = styled.img`
@@ -31,7 +41,11 @@ const CrossImageStyled = styled.img`
   top: 4%;
 `;
 
-const Modal = ({ isClicked, handleClick }) => (
+const PlaneImageStyled = styled.img`
+  width: 82%;
+`;
+
+const Modal = ({isClicked, handleClick, platform}) => (
   <Wrapper className={isClicked ? 'modal is-active' : 'modal'}>
     <div className="modal-background" />
     <div className="modal-content">
@@ -42,17 +56,21 @@ const Modal = ({ isClicked, handleClick }) => (
         <div className="box">
           <div className="columns is-multiline">
             <div className="column">
-              <img className=" " src="/images/paperplane@2x.png" alt="plane" />
+              <PlaneImageStyled
+                className=" "
+                src="/images/paperplane@2x.png"
+                alt="plane"
+              />
             </div>
 
-            <div className="column">
-              <div className="has-text-white has-text-weight-semibold">
-                The Android App is coming soon!
+            <TextWrapper className="column">
+              <div className="has-text-white has-text-weight-semibold modal-heading">
+                The {platform} App is coming soon!
               </div>
               <div className="has-text-white">
                 Subscibe to our newsletter and be the first to know.
               </div>
-            </div>
+            </TextWrapper>
             <NewsletterForm isVisible={false} />
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import {Link} from 'gatsby';
 
 import theme from '../utils/theme';
 
@@ -29,7 +29,7 @@ const LogoTextStyled = styled.span`
   color: ${theme.textColorBlack};
 `;
 
-const LinkStyled = styled(Link)`
+const LinkStyled = styled (Link)`
   color: ${theme.textColorBlack};
   padding-left: 1.5rem;
 `;
@@ -59,24 +59,24 @@ const MobileMenu = styled.div`
   }
 `;
 class TopHeader extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super (props);
 
-    this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+    this.toggleMobileMenu = this.toggleMobileMenu.bind (this);
     this.state = {
       isActive: false,
     };
   }
 
-  toggleMobileMenu() {
-    const { isActive } = this.state;
-    this.setState({
+  toggleMobileMenu () {
+    const {isActive} = this.state;
+    this.setState ({
       isActive: !isActive,
     });
   }
 
-  render() {
-    const { isActive } = this.state;
+  render () {
+    const {isActive} = this.state;
     return (
       <Wrapper className="navbar is-transparent">
         <NavBarContainer className="container">
@@ -127,10 +127,10 @@ class TopHeader extends React.Component {
           <div id="navbarExampleTransparentExample" className="navbar-menu">
             <div className="navbar-end  is-size-6">
               <div className="navbar-item">
-                <LinkStyled href="#">About</LinkStyled>
+                <LinkStyled to="#">About</LinkStyled>
               </div>
               <div className="navbar-item">
-                <LinkStyled href="#">Blog</LinkStyled>
+                <LinkStyled to="#">Blog</LinkStyled>
               </div>
               <div className="navbar-item">
                 <LinkStyled to="/terms-and-conditions/">
@@ -138,7 +138,7 @@ class TopHeader extends React.Component {
                 </LinkStyled>
               </div>
               <div className="navbar-item">
-                <LinkStyled href="#"> Contact Us</LinkStyled>
+                <LinkStyled to="#"> Contact Us</LinkStyled>
               </div>
             </div>
           </div>
