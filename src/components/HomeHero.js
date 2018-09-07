@@ -74,23 +74,23 @@ const TextStyled = styled.div`
 `;
 
 class HomeHero extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super (props);
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind (this);
     this.state = {
       isClicked: false,
     };
   }
 
-  handleClick() {
-    this.setState({
+  handleClick () {
+    this.setState ({
       isClicked: !this.state.isClicked,
     });
   }
 
-  render() {
-    const { isClicked } = this.state;
+  render () {
+    const {isClicked} = this.state;
 
     return (
       <React.Fragment>
@@ -125,7 +125,7 @@ class HomeHero extends React.Component {
                         <div className="level-item has-text-centered">
                           <a onClick={this.handleClick}>
                             <img
-                              src="/images/play_button@2x.png"
+                              src="/images/Play_button@2x.png"
                               alt="google-play"
                             />
                           </a>
@@ -166,7 +166,7 @@ class HomeHero extends React.Component {
                         <div className="level-item has-text-centered">
                           <a onClick={this.handleClick}>
                             <img
-                              src="/images/play_button@2x.png"
+                              src="/images/Play_button@2x.png"
                               alt="google-play"
                             />
                           </a>
