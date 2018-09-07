@@ -110,11 +110,11 @@ class TopHeader extends React.Component {
                   <li>About</li>
                 </Link>
                 <Link to="/">
-                  <li>Features</li>
-                </Link>
-                <Link to="/">
                   {' '}
                   <li>Blog</li>
+                </Link>
+                <Link to="/">
+                  <li>Terms & Conditions</li>
                 </Link>
                 <Link to="/">
                   {' '}
@@ -127,16 +127,16 @@ class TopHeader extends React.Component {
           <div id="navbarExampleTransparentExample" className="navbar-menu">
             <div className="navbar-end  is-size-6">
               <div className="navbar-item">
-                <LinkStyled>About</LinkStyled>
+                <LinkStyled href="#">About</LinkStyled>
               </div>
               <div className="navbar-item">
-                <LinkStyled>Features</LinkStyled>
+                <LinkStyled href="#">Blog</LinkStyled>
               </div>
               <div className="navbar-item">
-                <LinkStyled>Blog</LinkStyled>
+                <LinkStyled href="#">Terms & Conditions</LinkStyled>
               </div>
               <div className="navbar-item">
-                <LinkStyled>Contact Us</LinkStyled>
+                <LinkStyled href="#"> Contact Us</LinkStyled>
               </div>
             </div>
           </div>

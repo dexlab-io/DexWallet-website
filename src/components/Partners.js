@@ -14,9 +14,6 @@ const Container = styled.section`
      
     }
   }
-.columns {
-  margin-bottom: 2% !important;
-}
 `;
 
 const TitleStyled = styled.div`
@@ -25,6 +22,10 @@ const TitleStyled = styled.div`
   @media only screen (max-width: 600px) {
     margin-bottom: 3rem !important;
   }
+`;
+
+const Imagestyled = styled.img`
+  max-height: 5rem !important;
 `;
 
 const Partners = () => (
@@ -37,36 +38,39 @@ const Partners = () => (
       <div className="is-hidden-mobile">
         <div className="columns">
           <div className="column">
-            <img src="/images/collabs/logo_loopring@2x.png" alt="looper" />
+            <img src="/images/partners/logo_loopring@2x.png" alt="looper" />
+          </div>
+          <div className="column has-text-right">
+            <img src="/images/partners/ubiq.svg" alt="ubiq" />
           </div>
           <div className="column">
-            <img src="/images/collabs/logo_ubiq@2x.png" alt="ubiq" />
+            <img src="/images/partners/logo_vulpem@2x.png" alt="v" />
           </div>
           <div className="column">
-            <img src="/images/collabs/logo_vulpem@2x.png" alt="v" />
+            <img src="/images/partners/logo_feng@2x.png" alt="fengshui" />
           </div>
           <div className="column">
-            <img src="/images/collabs/logo_feng@2x.png" alt="fengshui" />
-          </div>
-          <div className="column">
-            <img src="/images/collabs/logo_kyber@2x.png" alt="kyber-network" />
+            <img src="/images/partners/logo_kyber@2x.png" alt="kyber-network" />
           </div>
         </div>
         <div className="columns">
           <div className="column">
-            <img src="/images/collabs/logo_kyber_2x.png" alt="maker" />
+            <Imagestyled src="/images/partners/logo_kyber_2x.png" alt="maker" />
           </div>
           <div className="column">
-            <img src="/images/collabs/logo_rocket@2x.png" alt="rocketpool" />
+            <Imagestyled
+              src="/images/partners/logo_rocket@2x.png"
+              alt="rocketpool"
+            />
           </div>
           <div className="column">
-            <img src="/images/collabs/logo_poa@2x.png" alt="poa" />
+            <img src="/images/partners/poa.png" alt="poa" />
           </div>
           <div className="column">
-            <img src="/images/collabs/logo_trivial@2x.png" alt="trivial" />
+            <img src="/images/partners/logo_trivial@2x.png" alt="trivial" />
           </div>
           <div className="column">
-            <img src="/images/collabs/logo_changelly@2x.png" alt="changely" />
+            <img src="/images/partners/logo_changelly@2x.png" alt="changely" />
           </div>
         </div>
       </div>

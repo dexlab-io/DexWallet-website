@@ -13,6 +13,7 @@ const IndexLayout = ({ children }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta description={config.description} />
     </Helmet>
+
     <div>{children}</div>
     <Footer />
   </div>
