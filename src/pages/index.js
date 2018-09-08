@@ -6,7 +6,6 @@ import Layout from '../components/Layout';
 
 import HomeHero from '../components/HomeHero';
 import Features from '../components/Features';
-import Newsletter from '../components/Newsletter';
 import Partners from '../components/Partners';
 
 export default class IndexPage extends React.Component {

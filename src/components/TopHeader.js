@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
+import Headroom from 'react-headroom';
 
 import theme from '../utils/theme';
 
 const Wrapper = styled.nav`
-  background-color: transparent;
+  background-color: #fff;
   .navbar-burger {
     height: 4.25rem;
   }
@@ -16,7 +17,6 @@ const Wrapper = styled.nav`
 
 const NavBarContainer = styled.div`
   padding-top: 2%;
-  padding-bottom: 2%;
   .navbar-item img {
     max-height: 2.125rem !important;
   }
@@ -29,7 +29,7 @@ const LogoTextStyled = styled.span`
   color: ${theme.textColorBlack};
 `;
 
-const LinkStyled = styled (Link)`
+const LinkStyled = styled(Link)`
   color: ${theme.textColorBlack};
   padding-left: 1.5rem;
 `;
@@ -59,91 +59,94 @@ const MobileMenu = styled.div`
   }
 `;
 class TopHeader extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
 
-    this.toggleMobileMenu = this.toggleMobileMenu.bind (this);
     this.state = {
       isActive: false,
     };
   }
 
-  toggleMobileMenu () {
-    const {isActive} = this.state;
-    this.setState ({
+  toggleMobileMenu = () => {
+    const { isActive } = this.state;
+    this.setState({
       isActive: !isActive,
     });
-  }
+  };
 
-  render () {
-    const {isActive} = this.state;
+  render() {
+    const { isActive } = this.state;
     return (
-      <Wrapper className="navbar is-transparent">
-        <NavBarContainer className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item">
-              <img src="/images/DexWallet_Icon@2x.png" alt="DexWallet" />
-              <LogoTextStyled>DexWallet</LogoTextStyled>
-            </Link>
-            <a
-              role="button"
-              className={isActive ? 'navbar-burger is-active' : 'navbar-burger'}
-              aria-label="menu"
-              aria-expanded="false"
-              onClick={this.toggleMobileMenu}
+      <Headroom>
+        <Wrapper className="navbar is-transparent">
+          <NavBarContainer className="container">
+            <div className="navbar-brand">
+              <Link to="/" className="navbar-item">
+                <img src="/images/DexWallet_Icon@2x.png" alt="DexWallet" />
+                <LogoTextStyled>DexWallet</LogoTextStyled>
+              </Link>
+              <a
+                role="button"
+                className={
+                  isActive ? 'navbar-burger is-active' : 'navbar-burger'
+                }
+                aria-label="menu"
+                aria-expanded="false"
+                onClick={this.toggleMobileMenu}
+              >
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+              </a>
+            </div>
+            <MobileMenu
+              className={
+                isActive
+                  ? 'has-text-centered is-hidden-desktop'
+                  : 'has-text-centered is-hidden-mobile is-hidden-tablet'
+              }
             >
-              <span aria-hidden="true" />
-              <span aria-hidden="true" />
-              <span aria-hidden="true" />
-            </a>
-          </div>
-          <MobileMenu
-            className={
-              isActive
-                ? 'has-text-centered is-hidden-desktop'
-                : 'has-text-centered is-hidden-mobile is-hidden-tablet'
-            }
-          >
-            <aside className="menu">
-              <ul className="menu-list is-size-6">
-                <Link to="/">
-                  <li>About</li>
-                </Link>
-                <Link to="/">
-                  {' '}
-                  <li>Blog</li>
-                </Link>
-                <Link to="/terms-and-conditions/">
-                  <li>Terms & Conditions</li>
-                </Link>
-                <Link to="/">
-                  {' '}
-                  <li>Contact Us</li>
-                </Link>
-              </ul>
-            </aside>
-          </MobileMenu>
+              <aside className="menu">
+                <ul className="menu-list is-size-6">
+                  <Link to="/">
+                    <li>About</li>
+                  </Link>
+                  <Link to="/">
+                    {' '}
+                    <li>Blog</li>
+                  </Link>
+                  <Link to="/terms-and-conditions/">
+                    <li>Terms & Conditions</li>
+                  </Link>
+                  <Link to="/">
+                    {' '}
+                    <li>Contact Us</li>
+                  </Link>
+                </ul>
+              </aside>
+            </MobileMenu>
 
-          <div id="navbarExampleTransparentExample" className="navbar-menu">
-            <div className="navbar-end  is-size-6">
-              <div className="navbar-item">
-                <LinkStyled to="#">About</LinkStyled>
-              </div>
-              <div className="navbar-item">
-                <LinkStyled to="#">Blog</LinkStyled>
-              </div>
-              <div className="navbar-item">
-                <LinkStyled to="/terms-and-conditions/">
-                  Terms & Conditions
-                </LinkStyled>
-              </div>
-              <div className="navbar-item">
-                <LinkStyled to="#"> Contact Us</LinkStyled>
+            <div id="navbarExampleTransparentExample" className="navbar-menu">
+              <div className="navbar-end  is-size-6">
+                <div className="navbar-item">
+                  <LinkStyled to="#">About</LinkStyled>
+                </div>
+                <div className="navbar-item">
+                  <LinkStyled to="#">Blog</LinkStyled>
+                </div>
+                <div className="navbar-item">
+                  <LinkStyled to="/terms-and-conditions/">
+                    Terms & Conditions
+                  </LinkStyled>
+                </div>
+                <div className="navbar-item">
+                  <LinkStyled to="#"> Contact Us</LinkStyled>
+                </div>
               </div>
             </div>
-          </div>
-        </NavBarContainer>
-      </Wrapper>
+          </NavBarContainer>
+        </Wrapper>
+      </Headroom>
     );
   }
 }
