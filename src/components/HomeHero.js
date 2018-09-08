@@ -74,28 +74,28 @@ const TextStyled = styled.div`
 `;
 
 class HomeHero extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
 
-    this.handleClick = this.handleClick.bind (this);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       isClicked: false,
       platform: '',
     };
   }
 
-  handleClick (e) {
-    const {platform} = e.target.dataset;
-    console.log (platform);
-    const {isClicked} = this.state;
-    this.setState ({
+  handleClick(e) {
+    const { platform } = e.target.dataset;
+    console.log(platform);
+    const { isClicked } = this.state;
+    this.setState({
       isClicked: !isClicked,
       platform,
     });
   }
 
-  render () {
-    const {isClicked, platform} = this.state;
+  render() {
+    const { isClicked, platform } = this.state;
 
     return (
       <React.Fragment>
@@ -131,7 +131,7 @@ class HomeHero extends React.Component {
                             <img
                               src="/images/iOs_button@2x.png"
                               alt="ios"
-                              data-platform="Ios"
+                              data-platform="IOS"
                             />
                           </a>
                         </div>
@@ -177,7 +177,7 @@ class HomeHero extends React.Component {
                             <img
                               src="/images/iOs_button@2x.png"
                               alt="ios"
-                              data-platform="Ios"
+                              data-platform="IOS"
                             />
                           </a>
                         </div>

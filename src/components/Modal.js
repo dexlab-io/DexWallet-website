@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import NewsletterForm from './NewsletterForm';
+import theme from '../utils/theme';
 
 const Wrapper = styled.div`
-   .modal-background {
+  .modal-background {
     background-color: rgba(10, 10, 10, 0.45);
   }
   .box-wrapper {
@@ -16,7 +17,7 @@ const Wrapper = styled.div`
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     color: #4a4a4a;
     display: block;
-    padding: 4rem 7rem 6rem 7rem;
+    padding: 5.25rem 6.6875rem 7.125rem 6.6875rem;
     @media only screen and (max-width: 600px) {
       padding: 3rem;
     }
@@ -28,9 +29,9 @@ const Wrapper = styled.div`
 
 const TextWrapper = styled.div`
   .modal-heading {
-    letter-spacing: 3px !important;
     padding-bottom: 0.6rem !important;
-}
+    font-weight: ${theme.fontMedium};
+  }
 `;
 
 const CrossImageStyled = styled.img`
@@ -45,7 +46,7 @@ const PlaneImageStyled = styled.img`
   width: 82%;
 `;
 
-const Modal = ({isClicked, handleClick, platform}) => (
+const Modal = ({ isClicked, handleClick, platform }) => (
   <Wrapper className={isClicked ? 'modal is-active' : 'modal'}>
     <div className="modal-background" />
     <div className="modal-content">
@@ -64,10 +65,10 @@ const Modal = ({isClicked, handleClick, platform}) => (
             </div>
 
             <TextWrapper className="column">
-              <div className="has-text-white has-text-weight-semibold modal-heading">
+              <div className="has-text-white modal-heading is-size-3">
                 The {platform} App is coming soon!
               </div>
-              <div className="has-text-white">
+              <div className="has-text-white is-size-5">
                 Subscibe to our newsletter and be the first to know.
               </div>
             </TextWrapper>

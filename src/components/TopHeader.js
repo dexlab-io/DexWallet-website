@@ -6,7 +6,9 @@ import Headroom from 'react-headroom';
 import theme from '../utils/theme';
 
 const Wrapper = styled.nav`
-  background-color: #fff;
+  background-color: ${props => props.bg};
+  transition: 0.5s;
+  padding: ${props => (props.bg === 'white' ? '0rem 1rem' : '0rem')};
   .navbar-burger {
     height: 4.25rem;
   }
@@ -64,8 +66,21 @@ class TopHeader extends React.Component {
 
     this.state = {
       isActive: false,
+      bg: 'transparent',
     };
   }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent);
+  }
+
+  listenScrollEvent = () => {
+    if (window.scrollY > 10) {
+      this.setState({ bg: 'white' });
+    } else {
+      this.setState({ bg: 'transparent' });
+    }
+  };
 
   toggleMobileMenu = () => {
     const { isActive } = this.state;
@@ -75,10 +90,11 @@ class TopHeader extends React.Component {
   };
 
   render() {
-    const { isActive } = this.state;
+    const { isActive, bg } = this.state;
+
     return (
       <Headroom>
-        <Wrapper className="navbar is-transparent">
+        <Wrapper className="navbar is-transparent" bg={bg}>
           <NavBarContainer className="container">
             <div className="navbar-brand">
               <Link to="/" className="navbar-item">
