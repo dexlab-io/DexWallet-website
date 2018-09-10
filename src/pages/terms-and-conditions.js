@@ -1,12 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import PreHeader from '../components/PreHeader';
-import TopHeader from '../components/TopHeader';
-import TermsAndConditionMain from '../components/TermsAndConditionMain';
+import TermsAndConditionDescription from '../components/TermsAndConditionDescription';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -18,8 +15,7 @@ export default class IndexPage extends React.Component {
           url={`${config.siteUrl}`}
           image={config.image}
         />
-
-        <TermsAndConditionMain />
+        <TermsAndConditionDescription />
       </Layout>
     );
   }
