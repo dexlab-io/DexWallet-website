@@ -19,10 +19,6 @@ const ImageStyledSeven = styled.img`
   max-height: 5rem !important;
 `;
 
-const ImageStyledThree = styled.img`
-  margin-top: -5%;
-`;
-
 const ImageStyledNine = styled.img`
   margin-top: 10%;
 `;
@@ -31,7 +27,7 @@ const ImageStyled = styled.img`
   max-height: 4rem !important;
 `;
 
-const CollaboratorsMobile = () => (
+const PartnersMobile = () => (
   <Wrapper className="is-hidden-tablet">
     <div className="columns is-mobile">
       <div className="column">
@@ -82,4 +78,4 @@ const CollaboratorsMobile = () => (
   </Wrapper>
 );
 
-export default CollaboratorsMobile;
+export default PartnersMobile;

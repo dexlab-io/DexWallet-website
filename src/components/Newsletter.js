@@ -16,11 +16,14 @@ const Container = styled.section`
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     padding-bottom: 1rem;
-    padding-top: 2.5rem;
+    padding-top: 7.5rem;
   }
   .columns {
     margin-left: 0rem;
     margin-right: 0rem;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      padding: 0rem 12rem;
+    }
   }
 `;
 
@@ -33,6 +36,11 @@ const PlaneImageStyled = styled.img`
     top: 10%;
     left: -30%;
     width: 26.5rem;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    top: 10%;
+    width: 22rem;
+    left: 26.5%;
   }
   @media only screen and (max-width: 1780px) {
     top: 10%;
@@ -47,12 +55,15 @@ const SocialContainer = styled.nav`
     padding-top: 1.5rem;
     margin-bottom: -0.5rem;
   }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-bottom: 2rem;
+  }
 `;
 
 const Newsletter = () => (
   <Container className="section">
     <PlaneImageStyled
-      className="is-hidden-tablet-only"
+      className=""
       src="/images/paperplane@2x.png"
       alt="plane"
     />

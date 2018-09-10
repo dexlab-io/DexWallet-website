@@ -20,7 +20,8 @@ const Container = styled.section`
     padding-bottom: 2rem;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    background-size: cover%;
+    background: url('/images/ipad-bg.png');
+    background-size: cover;
     padding-bottom: 2rem;
     background-position: 0% 0%;
   }
@@ -36,6 +37,9 @@ const Container = styled.section`
     @media only screen and (max-width: 600px) {
       font-size: 2.5rem !important;
     }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2.5rem !important;
+    }
   }
   .subtitle {
     line-height: 1.7rem;
@@ -47,6 +51,9 @@ const Container = styled.section`
       width: 100%;
     }
     @media only screen and (max-width: 1024px) and (min-width: 600px) {
+      line-height: 2.1rem;
+      padding: 0rem 1rem;
+      margin-top: 0rem !important;
       width: 100%;
     }
   }
@@ -60,12 +67,20 @@ const StoreButtons = styled.div`
       height: 3.3rem;
     }
   }
+  nav {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      padding: 0rem 14rem;
+    }
+  }
 `;
 
 const Wrapper = styled.div`
   padding-top: 8%;
   @media only screen and (max-width: 600px) {
     padding-top: 118%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-top: 64%;
   }
 `;
 

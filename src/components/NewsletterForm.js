@@ -9,6 +9,7 @@ const Container = styled.div`
   .field:not(:last-child) {
     margin-bottom: 0rem;
   }
+
   input {
     border-color: transparent;
     padding-bottom: calc(1.9em - 1px) !important;
@@ -16,6 +17,7 @@ const Container = styled.div`
     padding-left: calc(1.625em - 1px);
     box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
   }
+
   .field.is-grouped > .control:not(:last-child) {
     @media only screen and (max-width: 600px) {
       margin-right: 0rem !important;
@@ -60,6 +62,12 @@ const Container = styled.div`
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+  ::placeholder {
+    color: red !important;
+    font-size: 14px;
+   :hover {
+    border-color: transparent!important;
   }
 `;
 
