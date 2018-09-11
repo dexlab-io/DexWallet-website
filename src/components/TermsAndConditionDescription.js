@@ -48,7 +48,11 @@ const Container = styled.section`
   }
 `;
 
-const Heading = styled.h1``;
+const Heading = styled.h1`
+  @media only screen and (max-width: 600px) {
+    font-size: 2.5rem !important;
+  }
+`;
 
 const TermsAndConditionMain = () => (
   <React.Fragment>

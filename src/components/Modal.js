@@ -47,7 +47,7 @@ const PlaneImageStyled = styled.img`
 `;
 
 const Modal = ({ isClicked, handleClick, platform }) => (
-  <Wrapper className={isClicked ? 'modal is-active' : 'modal'}>
+  <Wrapper className={isClicked ? 'modal is-active ' : 'modal'}>
     <div className="modal-background" />
     <div className="modal-content">
       <div className="box-wrapper">

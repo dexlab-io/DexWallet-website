@@ -5,7 +5,7 @@ module.exports = {
   author: 'Parminder Klair',
   description: 'Dexex - Get Eth Wallet Now',
   siteUrl: 'https://www.dexlab.io/',
-  image: '/images/DexWallet_Icon@2x.png',
+  image: '/images/preview.png',
   twitter: '@dexlab_io',
   fbUserId: 'fbUserId',
   fbAppId: 'fbAppId',
