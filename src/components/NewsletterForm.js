@@ -17,8 +17,12 @@ const Container = styled.div`
     padding-top: calc(1.9em - 1px) !important;
     padding-left: calc(1.625em - 1px);
     box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+    ::placeholder {
+      color: #4a4a4a !important;
+      font-size: 12px !important;
+      font-weight: ${theme.fontMedium};
+    }
   }
-
   .field.is-grouped > .control:not(:last-child) {
     @media only screen and (max-width: 600px) {
       margin-right: 0rem !important;
@@ -64,12 +68,6 @@ const Container = styled.div`
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  ::placeholder {
-    color: red !important;
-    font-size: 14px;
-   :hover {
-    border-color: transparent!important;
-  }
 `;
 
 const CheckBoxTxt = styled.span`
@@ -113,6 +111,9 @@ class NewsletterForm extends React.Component {
     e.preventDefault();
     const result = await addToMailchimp(email);
     this.setState({ email: '', message: result.msg });
+    setTimeout(() => {
+      this.setState({ message: '' });
+    }, 2000);
   };
 
   handleChange(event) {

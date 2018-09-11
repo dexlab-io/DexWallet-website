@@ -48,8 +48,14 @@ const PlaneImageStyled = styled.img`
 `;
 
 const Modal = ({ isClicked, handleClick, platform }) => (
-  <Wrapper className={isClicked ? 'modal is-active ' : 'modal'}>
-    <div className="modal-background" />
+  <Wrapper
+    className={
+      isClicked
+        ? 'modal is-active modal-fx-fadeInScale'
+        : 'modal modal-fx-fadeInScale'
+    }
+  >
+    <div className="modal-background" onClick={handleClick} />
     <div className="modal-content">
       <div className="box-wrapper">
         <a onClick={handleClick}>

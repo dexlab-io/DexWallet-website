@@ -10,6 +10,9 @@ const Container = styled.section`
   .content {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    @media only screen and (max-width: 600px) {
+      padding-top: 2rem;
+    }
   }
   h1 {
     font-family: ${theme.primaryFont};
