@@ -69,7 +69,7 @@ const Modal = ({ isClicked, handleClick, platform }) => (
                 The {platform} App is coming soon!
               </div>
               <div className="has-text-white is-size-5">
-                Subscibe to our newsletter and be the first to know.
+                Subscribe to our newsletter and be the first to know.
               </div>
             </TextWrapper>
             <NewsletterForm isVisible={false} />

@@ -69,7 +69,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icon: './static/images/preview.png',
+        icon: './static/images/DexWallet_Icon@2x.png',
       },
     },
     `gatsby-plugin-offline`,
