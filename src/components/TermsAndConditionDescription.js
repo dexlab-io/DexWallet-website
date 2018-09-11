@@ -54,6 +54,13 @@ const Heading = styled.h1`
   }
 `;
 
+const ListStyled = styled.ol`
+  font-weight: ${theme.fontLarge};
+  li > * {
+    font-weight: ${theme.fontLite};
+  }
+`;
+
 const TermsAndConditionMain = () => (
   <React.Fragment>
     <PreHeader />
@@ -252,7 +259,7 @@ const TermsAndConditionMain = () => (
             </li>
           </ol>
 
-          <ol>
+          <ListStyled>
             <div className="list-heading">IV. Your Rights and Obligations</div>
             <li>
               <div className="list-heading">Create or Import Wallet</div>
@@ -280,6 +287,7 @@ const TermsAndConditionMain = () => (
                 </li>
               </ol>
             </li>
+            <br />
             <li>
               <div className="list-heading">Use of DexWallet</div>
               <ol type="a" className="list-style-alphabet inner-list-style ">
@@ -387,7 +395,7 @@ const TermsAndConditionMain = () => (
                 </li>
               </ol>
             </li>
-          </ol>
+          </ListStyled>
           <ol>
             <div className="list-heading">V. Risks</div>
             <li>

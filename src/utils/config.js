@@ -1,7 +1,7 @@
 module.exports = {
   DEBUG: process.env.NODE_ENV === 'development',
   siteName: 'Dexex - Get Eth Wallet Now',
-  logo: '/images/dexWallet_Icon@2x',
+  logo: './static/images/dexWallet_Icon@2x',
   author: 'Parminder Klair',
   description: 'Dexex - Get Eth Wallet Now',
   siteUrl: 'https://www.dexwallet.io/',

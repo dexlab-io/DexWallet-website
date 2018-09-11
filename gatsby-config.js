@@ -69,13 +69,13 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icon: './static/images/DexWallet_Icon@2x.png',
+        icon: config.logo,
       },
     },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: './static/images/DexWallet_Icon@2x.png',
+        logo: config.logo,
         injectHTML: true,
         icons: {
           android: true,
