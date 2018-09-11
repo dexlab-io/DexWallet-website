@@ -5,6 +5,7 @@ import theme from '../utils/theme';
 import TopHeader from './TopHeader';
 import PreHeader from './PreHeader';
 import Modal from './Modal';
+import lang from '../utils/lang';
 
 const Container = styled.section`
   background: url(/images/header_bg.png);
@@ -127,12 +128,10 @@ class HomeHero extends React.Component {
               <div className="columns">
                 <Wrapper className="column is-two-thirds">
                   <h1 className="title is-size-1 has-text-black has-text-centered-mobile">
-                    The only Wallet you need.
+                    {lang.heroTitle}
                   </h1>
                   <h2 className="subtitle is-size-5 has-text-black has-text-weight-light">
-                    Finally you can be in control of your assets, secure your
-                    private keys and enjoy the power of blockchain in a new,
-                    more free and fun way!
+                    {lang.heroSubTitle}
                   </h2>
 
                   <StoreButtons className="columns">

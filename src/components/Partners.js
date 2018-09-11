@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import theme from '../utils/theme';
 
 import PartnersMobile from './PartnersMobile';
+import lang from '../utils/lang';
 
 const Container = styled.section`
   img {
@@ -32,7 +33,7 @@ const Partners = () => (
   <Container className="section">
     <div className="container has-text-centered">
       <TitleStyled className="title has-text-light-grey is-size-6">
-        Proudly building the DEX ecosystem with invaluable friends
+        {lang.partnersTitle}
       </TitleStyled>
       <PartnersMobile />
       <div className="is-hidden-mobile">

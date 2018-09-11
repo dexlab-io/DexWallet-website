@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import NewsletterForm from './NewsletterForm';
 import theme from '../utils/theme';
+import lang from '../utils/lang';
 
 const Wrapper = styled.div`
   .modal-background {
@@ -69,7 +70,7 @@ const Modal = ({ isClicked, handleClick, platform }) => (
                 The {platform} App is coming soon!
               </div>
               <div className="has-text-white is-size-5">
-                Subscribe to our newsletter and be the first to know.
+                {lang.subscribeText}
               </div>
             </TextWrapper>
             <NewsletterForm isVisible={false} />

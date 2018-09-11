@@ -4,6 +4,7 @@ import { darken } from 'polished';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 import theme from '../utils/theme';
+import lang from '../utils/lang';
 
 const Container = styled.div`
   .field:not(:last-child) {
@@ -152,7 +153,7 @@ class NewsletterForm extends React.Component {
           <label className="wrapper">
             <input type="checkbox" />
             <CheckBoxTxt className="is-size-7-mobile">
-              I want to receive the newsletter
+              {lang.newsletterText}
             </CheckBoxTxt>
             <span className="checkmark" />
           </label>
