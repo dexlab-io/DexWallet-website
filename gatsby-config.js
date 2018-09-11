@@ -72,6 +72,24 @@ module.exports = {
         icon: './static/images/DexWallet_Icon@2x.png',
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './static/images/DexWallet_Icon@2x.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 };

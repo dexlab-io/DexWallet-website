@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import theme from '../utils/theme';
 
@@ -31,9 +32,9 @@ const Footer = () => (
         <span>
           Build with <i className="fas fa-heart" /> by &nbsp;&nbsp;
         </span>
-        <a href="/">
+        <Link href="/">
           <img src="/images/logo_footer@2x.png" alt="footer-logo" />
-        </a>
+        </Link>
       </Wrapper>
     </div>
   </Container>

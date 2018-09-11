@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "gatsby": "next",
+    "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-mailchimp": "https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#gatsby-v2",
     "gatsby-plugin-manifest": "next",

@@ -42,7 +42,7 @@ const Seo = ({ title, description, url, image }) => {
       <meta property="fb:app_id" content={config.fbAppId} />
 
       {/* Twitter Card tags */}
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={config.twitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
