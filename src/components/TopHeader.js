@@ -38,6 +38,11 @@ const LinkStyled = styled(Link)`
   padding-left: 1.5rem;
 `;
 
+const LinkStyledTwo = styled.a`
+  color: ${theme.textColorBlack};
+  padding-left: 1.5rem;
+`;
+
 const MobileMenu = styled.div`
   position: absolute;
   left: 0px;
@@ -126,18 +131,16 @@ class TopHeader extends React.Component {
             >
               <aside className="menu">
                 <ul className="menu-list is-size-6">
-                  <Link to="/">
+                  <a href="https://www.dexlab.io/">
                     <li>About</li>
-                  </Link>
-                  <Link to="/">
-                    {' '}
+                  </a>
+                  <a href="https://medium.com/dexlab-io">
                     <li>Blog</li>
-                  </Link>
+                  </a>
                   <Link to="/terms-and-conditions/">
                     <li>Terms & Conditions</li>
                   </Link>
                   <Link to="/">
-                    {' '}
                     <li>Contact Us</li>
                   </Link>
                 </ul>
@@ -147,10 +150,14 @@ class TopHeader extends React.Component {
             <div id="navbarExampleTransparentExample" className="navbar-menu">
               <div className="navbar-end  is-size-6">
                 <div className="navbar-item">
-                  <LinkStyled to="#">About</LinkStyled>
+                  <LinkStyledTwo href="https://www.dexlab.io/">
+                    About
+                  </LinkStyledTwo>
                 </div>
                 <div className="navbar-item">
-                  <LinkStyled to="#">Blog</LinkStyled>
+                  <LinkStyledTwo href="https://medium.com/dexlab-io">
+                    Blog
+                  </LinkStyledTwo>
                 </div>
                 <div className="navbar-item">
                   <LinkStyled to="/terms-and-conditions/">
@@ -158,7 +165,7 @@ class TopHeader extends React.Component {
                   </LinkStyled>
                 </div>
                 <div className="navbar-item">
-                  <LinkStyled to="#"> Contact Us</LinkStyled>
+                  <LinkStyled to="/"> Contact Us</LinkStyled>
                 </div>
               </div>
             </div>
