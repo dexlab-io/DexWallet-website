@@ -8,6 +8,7 @@ import theme from '../utils/theme';
 const Wrapper = styled.nav`
   background-color: ${props => props.bg};
   transition: 0.5s;
+
   @media only screen and (max-width: 600px) {
     padding: ${props => (props.bg === 'white' ? '0rem 1rem' : '0rem')};
   }

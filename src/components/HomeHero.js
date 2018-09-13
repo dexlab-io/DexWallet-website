@@ -78,7 +78,7 @@ const StoreButtons = styled.div`
 const Wrapper = styled.div`
   padding-top: 8%;
   @media only screen and (max-width: 600px) {
-    padding-top: 118%;
+    padding-top: 120%;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     padding-top: 64%;
