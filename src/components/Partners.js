@@ -7,6 +7,11 @@ import PartnersMobile from './PartnersMobile';
 import lang from '../utils/lang';
 
 const Container = styled.section`
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   img {
     max-height: 3.5rem;
   }

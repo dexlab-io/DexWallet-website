@@ -19,7 +19,7 @@ const Container = styled.section`
     font-weight: ${theme.fontLarge};
   }
   .content h1 {
-    margin-bottom: 0em !important;
+    margin-bottom: 0.4em !important;
   }
   .content {
     font-family: ${theme.secondaryFont} !important;
