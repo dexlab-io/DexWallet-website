@@ -4,14 +4,14 @@ module.exports = {
   logo: '/images/dexWallet_Icon@2x',
   author: 'Parminder Klair',
   description: 'Dexex - Get Eth Wallet Now',
-  siteUrl: 'https://www.dexlab.io/',
-  image: '/images/DexWallet_Icon@2x.png',
+  siteUrl: 'https://www.dexwallet.io/',
+  image: 'https://www.dexwallet.io/images/preview.png',
   twitter: '@dexlab_io',
   fbUserId: 'fbUserId',
   fbAppId: 'fbAppId',
   type: 'website',
-  googleAnalytics: 'UA-114999153-1',
+  googleAnalytics: 'UA-125551144-1',
 
   backgroundColor: '#e0e0e0',
-  themeColor: '#c62828',
+  themeColor: '#75b1e2;',
 };

@@ -14,6 +14,10 @@ export default class HTML extends React.Component {
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
           />
           <link
+            rel="stylesheet"
+            href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css"
+          />
+          <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
             rel="stylesheet"
           />

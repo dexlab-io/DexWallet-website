@@ -13,6 +13,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-mailchimp`,
+      options: {
+        endpoint: `https://dexlab.us17.list-manage.com/subscribe/post?u=98c7ba21bb6d63c6d14827c6e&amp;id=a51cc8153c`,
+      },
+    },
+    {
       resolve: `gatsby-source-prismic`,
       options: {
         repositoryName: `dex-landing`,
@@ -64,6 +70,24 @@ module.exports = {
         theme_color: config.themeColor,
         display: 'minimal-ui',
         icon: './static/images/DexWallet_Icon@2x.png',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './static/images/DexWallet_Icon@2x.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
       },
     },
     `gatsby-plugin-offline`,

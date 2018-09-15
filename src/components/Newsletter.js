@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { darken } from 'polished';
 
-import theme from '../utils/theme';
+import NewsletterForm from './NewsletterForm';
 
 const Container = styled.section`
   position: relative;
@@ -14,58 +13,38 @@ const Container = styled.section`
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-bottom: 1rem;
+    padding-top: 7.5rem;
+  }
   .columns {
     margin-left: 0rem;
     margin-right: 0rem;
-  }
-  .field:not(:last-child) {
-    margin-bottom: 0rem;
-  }
-  input {
-    padding-bottom: calc(1.9em - 1px) !important;
-    padding-top: calc(1.9em - 1px) !important;
-    padding-left: calc(1.625em - 1px);
-    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.1);
-  }
-  .field.is-grouped > .control:not(:last-child) {
-    @media only screen and (max-width: 600px) {
-      margin-right: 0rem !important;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      padding: 0rem 12rem;
     }
-  }
-  .checkbox {
-    float: left;
   }
 `;
 
 const PlaneImageStyled = styled.img`
   position: absolute;
-  top: 42%;
-  left: 4%;
-  width: 22.5rem;
+  top: 40%;
+  left: 1.5%;
+  width: 22%;
   @media only screen and (max-width: 600px) {
     top: 10%;
     left: -30%;
+    width: 26.5rem;
   }
-`;
-
-const ButtonWrapper = styled.a`
-  background-color: ${theme.primaryColor} !important;
-  padding-left: 1.5em !important;
-  padding-right: 1.5em !important;
-  transition: 0.5s;
-  :hover {
-    background-color: ${darken(0.2, theme.primaryColor)} !important;
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    top: 10%;
+    width: 22rem;
+    left: 26.5%;
   }
-`;
-
-const CheckBoxTxt = styled.span`
-  font-size: 0.625rem;
-  padding-left: 0.5rem;
-  color: white;
-`;
-
-const LabelStyled = styled.label`
-  line-height: 3rem;
+  @media only screen and (max-width: 1780px) {
+    top: 10%;
+    width: 22rem;
+  }
 `;
 
 const SocialContainer = styled.nav`
@@ -75,38 +54,21 @@ const SocialContainer = styled.nav`
     padding-top: 1.5rem;
     margin-bottom: -0.5rem;
   }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-bottom: 2rem;
+  }
 `;
 
-const GetOurLastUpdates = () => (
+const Newsletter = () => (
   <Container className="section">
-    <PlaneImageStyled src="/images/paperplane@2x.png" alt="plane" />
+    <PlaneImageStyled
+      className=""
+      src="/images/paperplane@2x.png"
+      alt="plane"
+    />
     <div className="container">
       <div className="columns">
-        <div className="column has-text-white has-text-centered-mobile">
-          <LabelStyled className="title is-size-3 has-text-white ">
-            Get our last updates
-          </LabelStyled>
-          <div className="field is-grouped">
-            <p className="control is-expanded has-text-black">
-              <input
-                className="input is-medium is-size-7"
-                type="text"
-                placeholder="Your@email.here"
-              />
-            </p>
-            <p className="control is-hidden-mobile">
-              <ButtonWrapper className="button is-info is-medium">
-                <span className="is-size-6">SUBMIT</span>
-              </ButtonWrapper>
-            </p>
-          </div>
-          <label className="checkbox">
-            <input type="checkbox" />
-            <CheckBoxTxt className="title is-size-7-mobile">
-              I want to receive the newsletter
-            </CheckBoxTxt>
-          </label>
-        </div>
+        <NewsletterForm isVisible />
         <br />
         <div className="column">
           <SocialContainer className="level is-mobile">
@@ -115,13 +77,11 @@ const GetOurLastUpdates = () => (
                 <img src="/images/social/icon_telegram.svg" alt="telegram" />
               </a>
             </div>
-            {/*
             <p className="level-item has-text-centered">
               <a className="link is-info" href="">
                 <img src="/images/social/icon_wechat.svg" alt="wechat" />
               </a>
             </p>
-            */}
             <p className="level-item has-text-centered">
               <a className="link is-info" href="https://medium.com/dexlab-io">
                 <img src="/images/social/icon_medium.svg" alt="medium" />
@@ -133,8 +93,11 @@ const GetOurLastUpdates = () => (
               </a>
             </p>
             <p className="level-item has-text-centered">
-              <a className="link is-info" href="https://www.facebook.com/dexlabio/">
-                <img src="/images/social/icon_facebook.svg" alt="facebook page" />
+              <a
+                className="link is-info"
+                href="https://www.facebook.com/dexlabio/"
+              >
+                <img src="/images/social/icon_facebook.svg" alt="fb" />
               </a>
             </p>
             <p className="level-item has-text-centered">
@@ -143,7 +106,10 @@ const GetOurLastUpdates = () => (
               </a>
             </p>
             <p className="level-item has-text-centered">
-              <a className="link is-info" href="https://www.reddit.com/r/dexlab/">
+              <a
+                className="link is-info"
+                href="https://www.reddit.com/r/dexlab/"
+              >
                 <img src="/images/social/icon_reddit.svg" alt="reddit" />
               </a>
             </p>
@@ -154,4 +120,4 @@ const GetOurLastUpdates = () => (
   </Container>
 );
 
-export default GetOurLastUpdates;
+export default Newsletter;

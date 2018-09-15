@@ -46,7 +46,7 @@ const Seo = ({ title, description, url, image }) => {
       <meta name="twitter:creator" content={config.twitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:src" content={image} />
       <html lang="en" />
     </Helmet>
   );
