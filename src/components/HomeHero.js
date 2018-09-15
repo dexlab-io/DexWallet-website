@@ -8,14 +8,14 @@ import Modal from './Modal';
 import lang from '../utils/lang';
 
 const Container = styled.section`
-  background: url(/images/header_bg.png);
+  background: url(/images/header-bg-iphone.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 0rem;
   padding-bottom: 19rem;
   background-position: 0% 32%;
   @media only screen and (max-width: 600px) {
-    background: url('/images/mobile_bg.png');
+    background: url('/images/mobile-bg-iphone.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 2rem;
