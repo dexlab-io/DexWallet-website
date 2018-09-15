@@ -172,6 +172,11 @@ class TopHeader extends React.Component {
                   </LinkStyled>
                 </div>
                 <div className="navbar-item">
+                  <LinkStyledTwo href="https://dexwallet.freshdesk.com/">
+                    Support
+                  </LinkStyledTwo>
+                </div>
+                <div className="navbar-item">
                   <LinkStyledTwo href="mailto:dev@dexlab.io">
                     Contact Us
                   </LinkStyledTwo>
