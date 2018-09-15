@@ -138,6 +138,12 @@ class TopHeader extends React.Component {
                   <a href="https://medium.com/dexlab-io">
                     <li>Blog</li>
                   </a>
+                  <a href="https://dexwallet.freshdesk.com/">
+                    <li>Support</li>
+                  </a>
+                  <a href="mailto:founders@dexlab.io">
+                    <li>Business Inquiries</li>
+                  </a>
                   <Link to="/terms-and-conditions/">
                     <li>Terms & Conditions</li>
                   </Link>
