@@ -102,7 +102,6 @@ class HomeHero extends React.Component {
 
   handleClick(e) {
     const { platform } = e.target.dataset;
-    console.log(platform);
     const { isClicked } = this.state;
     this.setState({
       isClicked: !isClicked,

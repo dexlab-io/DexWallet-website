@@ -144,6 +144,9 @@ class TopHeader extends React.Component {
                   <Link to="/terms-and-conditions/">
                     <li>Terms & Conditions</li>
                   </Link>
+                  <Link to="/privacy-policy/">
+                    <li>Privacy policy</li>
+                  </Link>
                   <a href="mailto:founders@dexlab.io">
                     <li>Business Inquiries</li>
                   </a>
@@ -166,6 +169,11 @@ class TopHeader extends React.Component {
                 <div className="navbar-item">
                   <LinkStyled to="/terms-and-conditions/">
                     Terms & Conditions
+                  </LinkStyled>
+                </div>
+                <div className="navbar-item">
+                  <LinkStyled to="/privacy-policy/">
+                      Privacy policy
                   </LinkStyled>
                 </div>
                 <div className="navbar-item">
