@@ -16,6 +16,7 @@ export default class IndexPage extends React.Component {
           image={config.image}
         />
         <TermsAndConditionDescription />
+        
       </Layout>
     );
   }
