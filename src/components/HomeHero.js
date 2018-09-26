@@ -140,7 +140,7 @@ class HomeHero extends React.Component {
                           <TextStyled className="">Get it now on</TextStyled>
                         </div>
                         <div className="level-item has-text-centered">
-                          <a onClick={this.handleClick}>
+                          <a href="https://itunes.apple.com/us/app/dexwallet/id1434816150?ls=1&mt=8">
                             <img
                               src="/images/iOs_button@2x.png"
                               alt="ios"
