@@ -97,7 +97,7 @@ const Features = () => (
           />
           <div className="title is-size-4">Transaction History</div>
           <div className="subtitle">
-            Bet up-to-date on the current status of your<br /> transactions
+            Be up-to-date on the current status of your<br /> transactions
             without leaving the app. <br />Display values in crypto or FIAT.
           </div>
         </div>
