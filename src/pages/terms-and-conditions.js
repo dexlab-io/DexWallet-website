@@ -4,6 +4,7 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import TermsAndConditionDescription from '../components/TermsAndConditionDescription';
+import Newsletter from '../components/Newsletter';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export default class IndexPage extends React.Component {
           image={config.image}
         />
         <TermsAndConditionDescription />
-        
+        <Newsletter />
       </Layout>
     );
   }
