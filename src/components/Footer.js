@@ -30,7 +30,7 @@ const Footer = () => (
     <div className="container has-text-centered has-text-white is-size-6 primary-font">
       <Wrapper>
         <span>
-          Built with <i className="fas fa-heart" /> by &nbsp;&nbsp;
+          Build with <i className="fas fa-heart" /> by &nbsp;&nbsp;
         </span>
         <Link to="/">
           <img src="/images/logo_footer@2x.png" alt="footer-logo" />
