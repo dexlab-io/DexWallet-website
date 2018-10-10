@@ -23,8 +23,6 @@ export default class IndexPage extends React.Component {
         <WhitelabelFeatures />
         <WhitelabelPrices />
         <WhiteLabelCTA />
-        {/* <Partners />
-        <Features /> */}
       </Layout>
     );
   }
