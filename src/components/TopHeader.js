@@ -141,14 +141,14 @@ class TopHeader extends React.Component {
                   <a href="https://dexwallet.freshdesk.com/">
                     <li>Support</li>
                   </a>
-                  <a href="mailto:founders@dexlab.io">
-                    <li>Business Inquiries</li>
-                  </a>
                   <Link to="/terms-and-conditions/">
                     <li>Terms & Conditions</li>
                   </Link>
-                  <a href="mailto:dev@dexlab.io">
-                    <li>Contact Us</li>
+                  <Link to="/privacy-policy/">
+                    <li>Privacy policy</li>
+                  </Link>
+                  <a href="mailto:founders@dexlab.io">
+                    <li>Business Inquiries</li>
                   </a>
                 </ul>
               </aside>
@@ -172,13 +172,18 @@ class TopHeader extends React.Component {
                   </LinkStyled>
                 </div>
                 <div className="navbar-item">
+                  <LinkStyled to="/privacy-policy/">
+                      Privacy policy
+                  </LinkStyled>
+                </div>
+                <div className="navbar-item">
                   <LinkStyledTwo href="https://dexwallet.freshdesk.com/">
                     Support
                   </LinkStyledTwo>
                 </div>
                 <div className="navbar-item">
-                  <LinkStyledTwo href="mailto:dev@dexlab.io">
-                    Contact Us
+                  <LinkStyledTwo href="mailto:founders@dexlab.io">
+                    Business Inquiries
                   </LinkStyledTwo>
                 </div>
               </div>

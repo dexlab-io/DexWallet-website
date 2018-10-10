@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { Link } from 'gatsby';
 import PreHeader from './PreHeader';
 import TopHeader from './TopHeader';
 import theme from '../utils/theme';
@@ -768,6 +768,8 @@ const TermsAndConditionMain = () => (
             </li>
           </ol>
         </div>
+
+        Please make sure to consult our <Link to="/privacy-policy">Privacy Policy</Link>.
       </div>
     </Container>
   </React.Fragment>

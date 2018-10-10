@@ -3,7 +3,7 @@ import React from 'react';
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import TermsAndConditionDescription from '../components/TermsAndConditionDescription';
+import PrivacyPolicyMain from '../components/PrivacyPolicy';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -15,8 +15,7 @@ export default class IndexPage extends React.Component {
           url={`${config.siteUrl}`}
           image={config.image}
         />
-        <TermsAndConditionDescription />
-        
+        <PrivacyPolicyMain />
       </Layout>
     );
   }
