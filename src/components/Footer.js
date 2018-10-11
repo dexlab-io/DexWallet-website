@@ -30,7 +30,7 @@ const Footer = () => (
     <div className="container has-text-centered has-text-white is-size-6 primary-font">
       <Wrapper>
         <span>
-          Build with <i className="fas fa-heart" /> by &nbsp;&nbsp;
+          Built with <i className="fas fa-heart" /> by &nbsp;&nbsp;
         </span>
         <a href="https://www.dexlab.io/">
           <img src="/images/logo_footer@2x.png" alt="footer-logo" />

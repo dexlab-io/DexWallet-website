@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import theme from '../utils/theme';
 
 const Container = styled.section`
   padding: 0rem;
+  line-height: 1.3 !important;
   .pricesContainer {
     padding: 3.8%;
     display: flex;
@@ -24,7 +24,7 @@ const Container = styled.section`
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
     font-weight: 300;
-    color: #000000;
+    color: ${theme.textColorBlack};
     text-align: center;
     margin: 0;
     margin-bottom: 1%;
@@ -170,12 +170,7 @@ const WhitelabelPrices = () => (
             width="70px"
             src="https://image.ibb.co/gdyFpK/phone02.png"
           />
-          <button
-            className="getintouchOutline"
-            onClick="window.location.href='/#'"
-          >
-            GET IN TOUCH
-          </button>
+          <button className="getintouchOutline">GET IN TOUCH</button>
           <p className="itemDescription">
             All the core features plus the exclusive pro functionalities in one
             easy-to-use package.

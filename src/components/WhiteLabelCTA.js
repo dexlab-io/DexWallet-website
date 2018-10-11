@@ -55,9 +55,7 @@ const WhiteLabelCTA = () => (
         Want to know more?<br />Want a quote or try a demo?<br />Contact Us. No
         strings attached.
       </h1>
-      <button className="getintouch" onClick="window.location.href='/#'">
-        GET IN TOUCH NOW
-      </button>
+      <button className="getintouch">GET IN TOUCH NOW</button>
     </div>
   </Container>
 );

@@ -65,8 +65,8 @@ const Container = styled.section`
     font-size: 1.3rem;
     font-weight: ${theme.fontLite};
     color: ${theme.textColorBlack};
-    margin-block-end: 0.83rem;
-    margin-block-start: 0.83rem;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
   }
 
   button.getintouch {
@@ -136,33 +136,12 @@ const WhitelabelHero = ({ isHome }) => (
                 ready-to-use solution that will give a kick to <br />
                 your crypto-project.
               </h2>
-              <button
-                className="getintouch"
-                onClick="window.location.href='/#'"
-              >
+              <button className="getintouch">
                 {isHome ? 'GET STARTED' : 'GET IN TOUCH NOW'}
               </button>
             </span>
           </div>
         </div>
-
-        {/* mobile view alternate columns */}
-
-        {/* <div className="is-hidden-tablet">
-              <div className="columns">
-                <div className="column" />
-                <Wrapper className="column is-two-thirds">
-                  <h1 className="title is-size-1 has-text-black has-text-centered-mobile">
-                    The only Wallet you need.
-                  </h1>
-                  <h2 className="subtitle is-size-5 has-text-black has-text-weight-light">
-                    Finally you can be in control of your assets, secure your
-                    private keys and enjoy the power of blockchain in a new,
-                    more free and fun way!
-                  </h2>
-                </Wrapper>
-              </div>
-            </div> */}
       </div>
     </Container>
   </React.Fragment>

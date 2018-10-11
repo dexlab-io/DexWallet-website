@@ -5,6 +5,7 @@ import theme from '../utils/theme';
 
 const Container = styled.section`
   background: #1e2624; /* Old browsers */
+  line-height: 1.3 !important;
   background: -moz-linear-gradient(
     top,
     #1e2624 0%,
@@ -131,6 +132,7 @@ const Container = styled.section`
     display: inline-block;
     vertical-align: middle;
     border-radius: 10px;
+    height: 0em;
   }
 
   .tag.green {
