@@ -170,7 +170,9 @@ const WhitelabelPrices = () => (
             width="70px"
             src="https://image.ibb.co/gdyFpK/phone02.png"
           />
-          <button className="getintouchOutline">GET IN TOUCH</button>
+          <a href="mailto: founders@dexlab.io">
+            <button className="getintouchOutline">GET IN TOUCH</button>
+          </a>
           <p className="itemDescription">
             All the core features plus the exclusive pro functionalities in one
             easy-to-use package.
