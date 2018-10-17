@@ -55,7 +55,7 @@ const WhiteLabelCTA = () => (
         Want to know more?<br />Want a quote or try a demo?<br />Contact Us. No
         strings attached.
       </h1>
-      <a href="mailto: founders@dexlab.io">
+      <a href="mailto:founders@dexlab.io">
         <button className="getintouch">GET IN TOUCH NOW</button>
       </a>
     </div>
