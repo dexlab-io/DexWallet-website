@@ -141,7 +141,7 @@ const WhitelabelPrices = () => (
             width="70px"
             src="https://image.ibb.co/iaq1eK/phone01.png"
           />{' '}
-          <p className="itemPrice">€19k</p>
+          <p className="itemPrice" />
           <p className="itemDescription">
             All the basic features you need in your hand since day zero.
           </p>
@@ -155,7 +155,7 @@ const WhitelabelPrices = () => (
             width="70px"
             src="https://image.ibb.co/iaq1eK/phone01.png"
           />
-          <p className="itemPrice">€29k</p>
+          <p className="itemPrice" />
           <p className="itemDescription">
             All the core features plus the exclusive pro functionalities in one
             easy-to-use package.
