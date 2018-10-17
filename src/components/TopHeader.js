@@ -7,7 +7,7 @@ import theme from '../utils/theme';
 
 const Wrapper = styled.nav`
   background-color: ${props => props.bg};
-  transition: 0.5s;
+  transition: 0.1s;
 
   @media only screen and (max-width: 600px) {
     padding: ${props => (props.bg === 'white' ? '0rem 1rem' : '0rem')};
@@ -132,9 +132,9 @@ class TopHeader extends React.Component {
             >
               <aside className="menu">
                 <ul className="menu-list is-size-6">
-                  <a href="https://www.dexlab.io/">
+                  {/* <a href="https://www.dexlab.io/">
                     <li>About</li>
-                  </a>
+                  </a> */}
                   <a href="https://medium.com/dexlab-io">
                     <li>Blog</li>
                   </a>
@@ -145,11 +145,14 @@ class TopHeader extends React.Component {
                     <li>Terms & Conditions</li>
                   </Link>
                   <Link to="/privacy-policy/">
-                    <li>Privacy policy</li>
+                    <li>Privacy</li>
                   </Link>
                   <a href="mailto:founders@dexlab.io">
                     <li>Business Inquiries</li>
                   </a>
+                  <div className="navbar-item">
+                    <Link to="/whitelabel">Whitelabel</Link>
+                  </div>
                 </ul>
               </aside>
             </MobileMenu>
@@ -157,9 +160,9 @@ class TopHeader extends React.Component {
             <div id="navbarExampleTransparentExample" className="navbar-menu">
               <div className="navbar-end  is-size-6">
                 <div className="navbar-item">
-                  <LinkStyledTwo href="https://www.dexlab.io/">
+                  {/* <LinkStyledTwo href="https://www.dexlab.io/">
                     About
-                  </LinkStyledTwo>
+                  </LinkStyledTwo> */}
                 </div>
                 <div className="navbar-item">
                   <LinkStyledTwo href="https://medium.com/dexlab-io">
@@ -172,9 +175,7 @@ class TopHeader extends React.Component {
                   </LinkStyled>
                 </div>
                 <div className="navbar-item">
-                  <LinkStyled to="/privacy-policy/">
-                      Privacy policy
-                  </LinkStyled>
+                  <LinkStyled to="/privacy-policy/">Privacy</LinkStyled>
                 </div>
                 <div className="navbar-item">
                   <LinkStyledTwo href="https://dexwallet.freshdesk.com/">
@@ -185,6 +186,9 @@ class TopHeader extends React.Component {
                   <LinkStyledTwo href="mailto:founders@dexlab.io">
                     Business Inquiries
                   </LinkStyledTwo>
+                </div>
+                <div className="navbar-item">
+                  <LinkStyled to="/whitelabel">Whitelabel</LinkStyled>
                 </div>
               </div>
             </div>

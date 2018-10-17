@@ -20,7 +20,7 @@ const Container = styled.section`
     background-repeat: no-repeat;
     padding-bottom: 2rem;
   }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
     background: url('/images/ipad-bg.png');
     background-size: cover;
     padding-bottom: 2rem;
@@ -28,17 +28,22 @@ const Container = styled.section`
   }
   @media screen and (min-width: 1024px) and (max-width: 1366px) {
     background-size: 125%;
-    padding-bottom: 2rem;
-    background-position: 0% 0%;
     padding-bottom: 16rem;
+    background-position: 0% 0%;
   }
+  @media screen and (min-width: 1000px) and (max-width: 1024px) {
+    background-size: 125%;
+    padding-bottom: 5rem;
+    background-position: 0% 0%;
+  }
+
   .level-item {
   }
   .title {
     @media only screen and (max-width: 600px) {
       font-size: 2.5rem !important;
     }
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1000px) {
       font-size: 2.5rem !important;
     }
   }
@@ -51,7 +56,7 @@ const Container = styled.section`
       margin-top: 0rem !important;
       width: 100%;
     }
-    @media only screen and (max-width: 1024px) and (min-width: 600px) {
+    @media only screen and (max-width: 1000px) and (min-width: 600px) {
       line-height: 2.1rem;
       padding: 0rem 1rem;
       margin-top: 0rem !important;
@@ -69,7 +74,7 @@ const StoreButtons = styled.div`
     }
   }
   nav {
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1000px) {
       padding: 0rem 14rem;
     }
   }
@@ -80,7 +85,7 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 600px) {
     padding-top: 120%;
   }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
     padding-top: 64%;
   }
 `;

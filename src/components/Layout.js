@@ -16,7 +16,7 @@ const IndexLayout = ({ children }) => (
     </Helmet>
 
     <div>{children}</div>
-    <Newsletter />
+    {/* <Newsletter /> */}
     <Footer />
   </div>
 );
