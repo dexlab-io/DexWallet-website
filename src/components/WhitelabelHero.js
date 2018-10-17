@@ -109,7 +109,7 @@ const Container = styled.section`
   } */
 `;
 
-const WhitelabelHero = ({ isHome }) => (
+const WhitelabelHero = ({isHome}) => (
   <React.Fragment>
     {/* {isHome ? null : <PreHeader /> */}
     {isHome ? null : <PreHeader />}
@@ -136,7 +136,7 @@ const WhitelabelHero = ({ isHome }) => (
                 ready-to-use solution that will give a kick to <br />
                 your crypto-project.
               </h2>
-              <a href="mailto: founders@dexlab.io">
+              <a href="mailto:founders@dexlab.io">
                 <button className="getintouch">
                   {isHome ? 'GET STARTED' : 'GET IN TOUCH NOW'}
                 </button>
