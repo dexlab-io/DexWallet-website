@@ -56,6 +56,8 @@ const Container = styled.section`
     margin: 0;
     line-height: 2.7rem;
     @media (max-width: 600px) {
+      font-size: 2.5rem;
+      line-height: 3.3rem;
       width: 100%;
     }
   }
