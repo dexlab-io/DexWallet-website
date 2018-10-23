@@ -65,8 +65,7 @@ const Container = styled.section`
     font-size: 1.3rem;
     font-weight: ${theme.fontLite};
     color: ${theme.textColorBlack};
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
+    margin: 1rem 0;
   }
 
   button.getintouch {
@@ -109,7 +108,7 @@ const Container = styled.section`
   } */
 `;
 
-const WhitelabelHero = ({isHome}) => (
+const WhitelabelHero = ({ isHome }) => (
   <React.Fragment>
     {/* {isHome ? null : <PreHeader /> */}
     {isHome ? null : <PreHeader />}
