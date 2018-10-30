@@ -24,6 +24,7 @@ const Container = styled.section`
   }
 
   button.getintouch {
+    margin-top: 0.5rem;
     padding: 10px 22px 12px 22px;
     height: 42px;
     border-radius: 6px;
