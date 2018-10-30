@@ -57,6 +57,7 @@ const Container = styled.section`
     line-height: 2.7rem;
     @media (max-width: 600px) {
       width: 100%;
+      font-size: 2.4rem;
     }
   }
 
@@ -109,7 +110,7 @@ const Container = styled.section`
   } */
 `;
 
-const WhitelabelHero = ({isHome}) => (
+const WhitelabelHero = ({ isHome }) => (
   <React.Fragment>
     {/* {isHome ? null : <PreHeader /> */}
     {isHome ? null : <PreHeader />}

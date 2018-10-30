@@ -42,7 +42,7 @@ const Container = styled.section`
 
   @media (max-width: 560px) {
     .whitelabelTitle {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       margin: 10% 0 5% 0;
     }
   }
@@ -52,8 +52,11 @@ const WhiteLabelCTA = () => (
   <Container className="section">
     <div className="whitelabelCtaContainer">
       <h1 className="whitelabelTitle">
-        Want to know more?<br />Want a quote or try a demo?<br />Contact Us. No
-        strings attached.
+        Want to know more?
+        <br />
+        Want a quote or try a demo?
+        <br />
+        Contact Us. No strings attached.
       </h1>
       <a href="mailto:founders@dexlab.io">
         <button className="getintouch">GET IN TOUCH NOW</button>
