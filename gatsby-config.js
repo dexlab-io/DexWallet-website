@@ -19,13 +19,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-prismic`,
-      options: {
-        repositoryName: `dex-landing`,
-        accessToken: `MC5Xb3ZCQVI4QUFDSUE3dWQ4.fu-_ve-_ve-_vVDvv71qUQfvv71xE--_ve-_ve-_vVUb77-9ZX5D77-977-977-977-9cO-_vVtqEB8l`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
