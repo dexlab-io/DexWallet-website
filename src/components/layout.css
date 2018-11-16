@@ -23,10 +23,13 @@ textarea {
 
 .title {
   font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  margin-bottom: 2rem !important;
 }
 
 .subtitle {
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0.4rem !important;
 }
 
 .button {

@@ -59,6 +59,7 @@ const Container = styled.section`
       font-size: 2.5rem;
       line-height: 3.3rem;
       width: 100%;
+      font-size: 2.4rem;
     }
   }
 
@@ -132,7 +133,7 @@ const WhitelabelHero = ({ isHome }) => (
               <h1 className="whitelabelTitle">
                 Whitelabel Wallet solution for your Company.
               </h1>
-              <h2 className="whitelabelSub is-hidden-mobile">
+               <h2 className="whitelabelSub is-hidden-mobile">
                 All the DexWallet functionalities and much more in a <br />
                 ready-to-use solution that will give a kick to <br />
                 your crypto-project.
