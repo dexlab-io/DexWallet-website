@@ -56,6 +56,8 @@ const Container = styled.section`
     margin: 0;
     line-height: 2.7rem;
     @media (max-width: 600px) {
+      font-size: 2.5rem;
+      line-height: 3.3rem;
       width: 100%;
       font-size: 2.4rem;
     }
@@ -66,8 +68,7 @@ const Container = styled.section`
     font-size: 1.3rem;
     font-weight: ${theme.fontLite};
     color: ${theme.textColorBlack};
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
+    margin: 1rem 0;
   }
 
   button.getintouch {
@@ -132,11 +133,17 @@ const WhitelabelHero = ({ isHome }) => (
               <h1 className="whitelabelTitle">
                 Whitelabel Wallet solution for your Company.
               </h1>
-              <h2 className="whitelabelSub">
+               <h2 className="whitelabelSub is-hidden-mobile">
+                All the DexWallet functionalities and much more in a <br />
+                ready-to-use solution that will give a kick to <br />
+                your crypto-project.
+              </h2>
+              <h2 className="whitelabelSub is-hidden-tablet">
                 All the DexWallet functionalities and much more in a
                 ready-to-use solution that will give a kick to your
                 crypto-project.
               </h2>
+
               <a href="mailto:founders@dexlab.io">
                 <button className="getintouch">
                   {isHome ? 'GET STARTED' : 'GET IN TOUCH NOW'}
