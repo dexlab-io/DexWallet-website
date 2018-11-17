@@ -9,6 +9,7 @@ import Features from '../components/Features';
 import Partners from '../components/Partners';
 import Newsletter from '../components/Newsletter';
 import WhitelabelHero from '../components/WhitelabelHero';
+import VerifiedToken from '../components/VerifiedToken';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -25,6 +26,7 @@ export default class IndexPage extends React.Component {
         <Features />
         <Newsletter />
         <WhitelabelHero isHome />
+        <VerifiedToken />
       </Layout>
     );
   }
