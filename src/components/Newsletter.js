@@ -98,7 +98,7 @@ const Newsletter = () => (
               </a>
             </p>
             <p className="level-item has-text-centered">
-              <a className="link is-info" href="https://twitter.com/dexlab_io">
+              <a className="link is-info" href="https://twitter.com/DexWallet">
                 <img src="/images/social/icon_twitter.svg" alt="twitter" />
               </a>
             </p>
