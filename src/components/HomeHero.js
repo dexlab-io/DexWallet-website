@@ -154,7 +154,7 @@ class HomeHero extends React.Component {
                           </a>
                         </div>
                         <div className="level-item has-text-centered">
-                          <a onClick={this.handleClick}>
+                          <a href="https://play.google.com/store/apps/details?id=io.dexlab.dexwallet">
                             <img
                               src="/images/Play_button@2x.png"
                               alt="google-play"
