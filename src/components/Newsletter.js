@@ -72,6 +72,14 @@ const Newsletter = () => (
         <br />
         <div className="column">
           <SocialContainer className="level is-mobile">
+            <p className="level-item has-text-centered">
+              <a
+                className="link is-info"
+                href="https://www.dexwallet.io/discord"
+              >
+                <img src="/images/social/icon_discord.png" alt="discord" />
+              </a>
+            </p>
             <div className="level-item has-text-centered">
               <a className="link is-info" href="https://t.me/joindexlab">
                 <img src="/images/social/icon_telegram.svg" alt="telegram" />
@@ -90,7 +98,7 @@ const Newsletter = () => (
               </a>
             </p>
             <p className="level-item has-text-centered">
-              <a className="link is-info" href="https://twitter.com/dexlab_io">
+              <a className="link is-info" href="https://twitter.com/DexWallet">
                 <img src="/images/social/icon_twitter.svg" alt="twitter" />
               </a>
             </p>
