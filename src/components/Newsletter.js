@@ -57,6 +57,9 @@ const SocialContainer = styled.nav`
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     padding-bottom: 2rem;
   }
+  .discord img {
+    width: 30px;
+  }
 `;
 
 const Newsletter = () => (
@@ -74,10 +77,10 @@ const Newsletter = () => (
           <SocialContainer className="level is-mobile">
             <p className="level-item has-text-centered">
               <a
-                className="link is-info"
+                className="link discord is-info"
                 href="https://www.dexwallet.io/discord"
               >
-                <img src="/images/social/icon_discord.png" alt="discord" />
+                <img src="/images/social/discord.png" alt="discord" />
               </a>
             </p>
             <div className="level-item has-text-centered">
