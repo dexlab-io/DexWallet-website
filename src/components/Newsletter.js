@@ -80,7 +80,7 @@ const Newsletter = () => (
                 className="link discord is-info"
                 href="https://www.dexwallet.io/discord"
               >
-                <img src="/images/social/icon_discord.svg" alt="discord" />
+                <img src="/images/social/discord.svg" alt="discord" />
               </a>
             </p>
             <div className="level-item has-text-centered">
