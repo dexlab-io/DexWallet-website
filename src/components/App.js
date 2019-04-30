@@ -19,7 +19,7 @@ import WlFeatures from './WlFeatures';
 class App extends Component {
   render() {
     return (
-  <span>
+      <span>
         <Menu />
         <BigX />
         <Hero />
@@ -35,7 +35,7 @@ class App extends Component {
         {/* <MediumPosts /> */}
         {/* <NewsletterForm /> */}
         <FooterMenu />
-        </span> 
+      </span>
     );
   }
 }

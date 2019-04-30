@@ -11,7 +11,8 @@
   --text-small: 0.8rem;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   background-color: var(--almost-black);
   font-family: 'Rubik', sans-serif;
@@ -934,7 +935,13 @@ input.newsletterButton {
     color: #000000;
     background-color: #ffffff !important;
     background: #ffffff !important;
-    background: -webkit-gradient( linear, center top, center bottom, from(#ffffff), to(#ffffff));
+    background: -webkit-gradient(
+      linear,
+      center top,
+      center bottom,
+      from(#ffffff),
+      to(#ffffff)
+    );
     background: -webkit-linear-gradient(#ffffff, #ffffff);
     background: -moz-linear-gradient(#ffffff, #ffffff);
     background: -o-linear-gradient(#ffffff, #ffffff);
