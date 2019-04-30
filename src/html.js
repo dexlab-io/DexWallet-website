@@ -12,6 +12,7 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <title>DexWallet - The only Wallet you need by Dexlab</title>
 
           {/* Add custom css or scripts here */}
 
