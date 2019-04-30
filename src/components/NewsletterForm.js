@@ -1,169 +1,71 @@
-import React from 'react';
-import styled from 'styled-components';
-import { darken } from 'polished';
-import addToMailchimp from 'gatsby-plugin-mailchimp';
+import React from 'react'
+import Social from 'react'
 
-import theme from '../utils/theme';
-import lang from '../utils/lang';
-
-const Container = styled.div`
-  .field:not(:last-child) {
-    margin-bottom: 0rem;
-  }
-
-  input {
-    border-color: transparent;
-    padding-bottom: calc(1.9em - 1px) !important;
-    padding-top: calc(1.9em - 1px) !important;
-    padding-left: calc(1.625em - 1px);
-    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
-    ::placeholder {
-      color: #4a4a4a !important;
-      font-size: 12px !important;
-      font-weight: ${theme.fontMedium};
-    }
-  }
-  .field.is-grouped > .control:not(:last-child) {
-    @media only screen and (max-width: 600px) {
-      margin-right: 0rem !important;
-    }
-  }
-  .wrapper {
-    float: left;
-  }
-  .wrapper {
-    position: relative;
-  }
-  .wrapper input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    display: block;
-  }
-  .checkmark {
-    position: absolute;
-    top: 7px;
-    left: 0;
-    height: 0.75rem;
-    width: 0.75rem;
-    background-color: ${theme.textColorWhite};
-    border-radius: 2px;
-  }
-  .checkmark:after {
-    content: '';
-    position: absolute;
-    display: none;
-  }
-  .wrapper input:checked ~ .checkmark:after {
-    display: block;
-  }
-  .wrapper .checkmark:after {
-    left: 5px;
-    top: -1px;
-    width: 5px;
-    height: 10px;
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-`;
-
-const CheckBoxTxt = styled.span`
-  font-weight: ${theme.fontMedium};
-  font-size: 0.625rem;
-  padding-left: 1.2rem;
-  color: ${theme.textColorWhite};
-`;
-
-const LabelStyled = styled.label`
-  line-height: 3rem;
-  font-weight: ${theme.fontMedium};
-`;
-
-const ButtonWrapper = styled.button`
-  background-color: ${theme.primaryColor} !important;
-  padding-left: 1.5em !important;
-  padding-right: 1.5em !important;
-  font-weight: ${theme.fontMedium};
-  transition: 0.5s;
-  :hover {
-    background-color: ${darken(0.2, theme.primaryColor)} !important;
-  }
-`;
-
-class NewsletterForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      message: '',
-    };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  // 2. via `async/await`
-  handleSubmit = async e => {
-    const { email } = this.state;
-    e.preventDefault();
-    const result = await addToMailchimp(email);
-    this.setState({ email: '', message: result.msg });
-    setTimeout(() => {
-      this.setState({ message: '' });
-    }, 2000);
-  };
-
-  handleChange(event) {
-    this.setState({ email: event.target.value });
-  }
-
-  render() {
-    const { message, email } = this.state;
-    const { isVisible } = this.props;
-    return (
-      <Container className="column has-text-white has-text-centered-mobile">
-        {isVisible ? (
-          <LabelStyled className="is-size-3 has-text-white ">
-            Get our last updates
-          </LabelStyled>
-        ) : null}
-        <form onSubmit={this.handleSubmit}>
-          <div className="field is-grouped">
-            <p className="control is-expanded has-text-black">
+const Newsletterform = (props) => {
+  return (
+    <section class="newsletter">
+      <section class="newsletterForm">
+        <form
+          action="https://dexlab.us17.list-manage.com/subscribe/post?u=98c7ba21bb6d63c6d14827c6e&amp;id=a51cc8153c"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <h2>Get our latest news</h2>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address </label>
               <input
-                className="input is-medium is-size-7"
                 type="email"
-                value={email}
-                placeholder="Your@email.here"
-                onChange={this.handleChange}
+                value=""
+                name="EMAIL"
+                class="required email"
+                id="mce-EMAIL"
               />
-            </p>
-            <p className="control is-hidden-mobile">
-              <ButtonWrapper
-                className="button is-info is-medium"
-                type="submit"
-                target="_parent"
+              <div id="mce-responses" class="clear">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display:none"
+                />
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display:none"
+                />
+              </div>
+              <div
+                style="position: absolute; left: -5000px;"
+                aria-hidden="true"
               >
-                <span className="is-size-6">SUBMIT</span>
-              </ButtonWrapper>
-            </p>
+                <input
+                  type="text"
+                  name="b_98c7ba21bb6d63c6d14827c6e_a51cc8153c"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="clear">
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                />
+              </div>
+            </div>
           </div>
-          <label className="wrapper">
-            <input type="checkbox" />
-            <CheckBoxTxt className="is-size-7-mobile">
-              {lang.newsletterText}
-            </CheckBoxTxt>
-            <span className="checkmark" />
-          </label>
-          <br />
-          <div className="">{message}</div>
         </form>
-      </Container>
-    );
-  }
-}
 
-export default NewsletterForm;
+        <Social />
+      </section>
+    </section>
+  );
+};
+
+
+export default Newsletterform
