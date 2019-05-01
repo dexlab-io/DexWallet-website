@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PreHeader from './PreHeader';
-import TopHeader from './TopHeader';
 import theme from '../utils/theme';
 
 const Container = styled.section`
@@ -66,10 +64,8 @@ const Heading = styled.h1`
 
 const PrivacyPolicyMain = () => (
   <React.Fragment>
-    <PreHeader />
     <Container className="section">
       <div className="container is-size-6">
-        <TopHeader />
         <div className="content is-size-5">
           <Heading className="has-text-black is-size-1">
             Privacy Policy Disclaimer
@@ -119,12 +115,10 @@ const PrivacyPolicyMain = () => (
             Application and confirm that they have the third party's consent to
             provide the Data to the Owner.
           </p>
-
           <div className="list-heading">
             Mode and place of processing the Data
           </div>
           <div className="list-heading">Methods of processing</div>
-
           <p>
             The Owner takes appropriate security measures to prevent
             unauthorized access, disclosure, modification, or unauthorized
@@ -140,7 +134,6 @@ const PrivacyPolicyMain = () => (
             by the Owner. The updated list of these parties may be requested
             from the Owner at any time.
           </p>
-
           <ol>
             <div className="list-heading">Legal basis of processing</div>
             The Owner may process Personal Data relating to Users if one of the
@@ -176,7 +169,6 @@ const PrivacyPolicyMain = () => (
             whether the provision of Personal Data is a statutory or contractual
             requirement, or a requirement necessary to enter into a contract.
           </ol>
-
           <div className="list-heading">Place</div>
           <p>
             The Data is processed at the Owner's operating offices and in any
@@ -298,7 +290,6 @@ const PrivacyPolicyMain = () => (
               their competent data protection authority.
             </li>
           </ol>
-
           <div className="list-heading">
             Details about the right to object to processing
           </div>
@@ -314,7 +305,6 @@ const PrivacyPolicyMain = () => (
             processing Personal Data for direct marketing purposes, Users may
             refer to the relevant sections of this document
           </p>
-
           <div className="list-heading">How to exercise these rights</div>
           <p>
             Any requests to exercise User rights can be directed to the Owner
@@ -338,7 +328,6 @@ const PrivacyPolicyMain = () => (
             information concerning particular Services or the collection and
             processing of Personal Data upon request.
           </p>
-
           <div className="list-heading">System logs and maintenance</div>
           <p>
             For operation and maintenance purposes, this Application and any
@@ -346,7 +335,6 @@ const PrivacyPolicyMain = () => (
             this Application (System logs) use other Personal Data (such as the
             IP Address) for this purpose.
           </p>
-
           <div className="list-heading">
             Information not contained in this policy
           </div>
@@ -359,7 +347,6 @@ const PrivacyPolicyMain = () => (
             services it uses honor the “Do Not Track” requests, please read
             their privacy policies.
           </p>
-
           <div className="list-heading">Changes to this privacy policy</div>
           <p>
             The Owner reserves the right to make changes to this privacy policy
@@ -377,5 +364,4 @@ const PrivacyPolicyMain = () => (
     </Container>
   </React.Fragment>
 );
-
 export default PrivacyPolicyMain;

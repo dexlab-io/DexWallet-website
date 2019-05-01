@@ -8,27 +8,14 @@ export default class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <base href="/" target="_blank" />
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700"
-            rel="stylesheet"
-          />
-          <script
-            defer
-            src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
-          />
+          <title>DexWallet - The only Wallet you need by Dexlab</title>
+
+          {/* Add custom css or scripts here */}
+
           {/* Add custom css or scripts here */}
 
           {this.props.headComponents}

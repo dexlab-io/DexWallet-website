@@ -3,13 +3,17 @@ import React from 'react';
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-
-import HomeHero from '../components/HomeHero';
-import Features from '../components/Features';
-import Partners from '../components/Partners';
-import Newsletter from '../components/Newsletter';
-import WhitelabelHero from '../components/WhitelabelHero';
-import VerifiedToken from '../components/VerifiedToken';
+import Hero from '../components/Hero';
+import BigX from '../components/BigX';
+import BigPhone from '../components/BigPhone';
+import Whitelabel from '../components/Whitelabel';
+import Quotes from '../components/Quotes';
+import Staking from '../components/Staking';
+import Integrations from '../components/Integrations';
+import SavingAccount from '../components/SavingAccount';
+import Payments from '../components/Payments';
+import NativedApps from '../components/NativedApps';
+import WlFeatures from '../components/WlFeatures';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -21,12 +25,19 @@ export default class IndexPage extends React.Component {
           url={`${config.siteUrl}`}
           image={config.image}
         />
-        <HomeHero />
-        <Partners />
-        <Features />
-        <Newsletter />
-        <WhitelabelHero isHome />
-        <VerifiedToken />
+        <BigX />
+        <Hero />
+        <BigPhone />
+        <Integrations />
+        <Staking />
+        <SavingAccount />
+        <NativedApps />
+        <Payments />
+        <Quotes />
+        <Whitelabel />
+        <WlFeatures />
+        {/* <MediumPosts /> */}
+        {/* <NewsletterForm /> */}
       </Layout>
     );
   }

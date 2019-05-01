@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import PreHeader from './PreHeader';
-import TopHeader from './TopHeader';
 import theme from '../utils/theme';
 
 const Container = styled.section`
@@ -66,10 +64,8 @@ const ListStyled = styled.ol`
 
 const TermsAndConditionMain = () => (
   <React.Fragment>
-    <PreHeader />
     <Container className="section">
       <div className="container is-size-6">
-        <TopHeader />
         <div className="content is-size-5">
           <Heading className="has-text-black is-size-1">
             DexWallet Terms & Conditions of use
@@ -768,8 +764,8 @@ const TermsAndConditionMain = () => (
             </li>
           </ol>
         </div>
-
-        Please make sure to consult our <Link to="/privacy-policy">Privacy Policy</Link>.
+        Please make sure to consult our{' '}
+        <Link to="/privacy-policy">Privacy Policy</Link>.
       </div>
     </Container>
   </React.Fragment>
