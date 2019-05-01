@@ -6,15 +6,13 @@ const Menu = props => {
   return (
     <section className="header">
       <section className="menuLogo">
-        <a href="./">
-          <Link to="./">
-            <img
-              src="/img/DexwalletLogo.svg"
-              height="26px"
-              alt="dexwallet logo"
-            />
-          </Link>
-        </a>
+        <Link to="./">
+          <img
+            src="/img/DexwalletLogo.svg"
+            height="26px"
+            alt="dexwallet logo"
+          />
+        </Link>
       </section>
       <section className="menu">
         <a
@@ -41,14 +39,12 @@ const Menu = props => {
         >
           Contacts
         </a>
-        <a className="menuItem desktop">
-          <Link to="/whitelabel/">Whitelabel</Link>
-        </a>
-        <a className=" desktop headerButton">
-          <Link className="headerButton" to="/pro/">
-            Pro
-          </Link>
-        </a>
+        <Link className="menuItem desktop" to="/whitelabel/">
+          Whitelabel
+        </Link>
+        <Link className="desktop headerButton" to="/pro/">
+          Pro
+        </Link>
         <button className="menuItem mobile" id="trigger-overlay" type="button">
           <img
             src="/img/hamburgerIcon.svg"
