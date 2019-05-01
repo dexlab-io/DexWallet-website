@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import PrivacyPolicyMain from '../components/PrivacyPolicy';
 import Newsletter from '../components/NewsletterForm';
 
-export default class IndexPage extends React.Component {
+export default class PrivacyPolicy extends React.Component {
   render() {
     return (
       <Layout>
