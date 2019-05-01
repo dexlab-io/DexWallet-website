@@ -2,7 +2,6 @@
 
 import React from 'react';
 
-
 class MediumArticles extends React.Component {
   componentDidMount() {
     MediumWidget.Init({
@@ -20,15 +19,15 @@ class MediumArticles extends React.Component {
 
   render() {
     return (
-    <section class="MediumPostsContainer">
+      <section className="MediumPostsContainer">
         <h1>Check our latest news</h1>
         <div id="articles">
-            <div id="medium-widget"></div>
-            <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+          <div id="medium-widget" />
+          <script src="https://medium-widget.pixelpoint.io/widget.js" />
         </div>
-    </section>
+      </section>
     );
   }
 }
 
-export default MediumPosts;
+export default MediumArticles;

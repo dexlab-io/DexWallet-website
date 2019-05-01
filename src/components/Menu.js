@@ -1,8 +1,9 @@
 import React from 'react';
-import './Menu.css';
 import { Link } from 'gatsby';
 
-const Menu = props => {
+import './Menu.css';
+
+const Menu = () => {
   return (
     <section className="header">
       <section className="menuLogo">

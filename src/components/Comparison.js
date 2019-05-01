@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Comparison = props => {
+const Comparison = () => {
   return (
     <span className="integrations comparison">
       <span className="plan planBasic">

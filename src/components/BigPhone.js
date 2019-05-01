@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BigPhone = props => {
+const BigPhone = () => {
   return (
     <span className="bigPhone">
       <video

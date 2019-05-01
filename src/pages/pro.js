@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Menu from '../components/Menu';
-import FooterMenu from '../components/FooterMenu';
-import '../components/App.css';
+
+import config from '../utils/config';
+import Seo from '../components/Seo';
+import Layout from '../components/Layout';
 import PictureLeft from '../components/PictureLeft';
 import PictureRight from '../components/PictureRight';
 import PictureFull from '../components/PictureFull';
-import Notifications from '../Notifications';
+import Notifications from '../components/Notifications';
 import BigX from '../components/BigX';
 import ProHero from '../components/ProHero';
 import Comparison from '../components/Comparison';
@@ -18,10 +19,14 @@ import Comparison from '../components/Comparison';
 class Pro extends Component {
   render() {
     return (
-      <span>
-        <Menu />
+      <Layout>
+        <Seo
+          title={config.siteName}
+          description={config.description}
+          url={`${config.siteUrl}`}
+          image={config.image}
+        />
         <BigX />
-
         <ProHero
           title="Dexwallet Pro"
           subtitle="Preorder it now and get a limited offer for only $89,00 per 2 years (1 year free)"
@@ -114,9 +119,7 @@ class Pro extends Component {
 
         <h1 className="centeredTitle">Why going Pro?</h1>
         <Comparison />
-
-        <FooterMenu />
-      </span>
+      </Layout>
     );
   }
 }

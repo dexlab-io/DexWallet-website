@@ -1,38 +1,39 @@
-import React from 'react'
-import Social from 'react'
+import React from 'react';
 
-const Newsletterform = (props) => {
+import Social from './Social';
+
+const Newsletterform = () => {
   return (
-    <section class="newsletter">
-      <section class="newsletterForm">
+    <section className="newsletter">
+      <section className="newsletterForm">
         <form
           action="https://dexlab.us17.list-manage.com/subscribe/post?u=98c7ba21bb6d63c6d14827c6e&amp;id=a51cc8153c"
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
-          class="validate"
+          className="validate"
           target="_blank"
-          novalidate
+          noValidate
         >
           <div id="mc_embed_signup_scroll">
             <h2>Get our latest news</h2>
-            <div class="mc-field-group">
-              <label for="mce-EMAIL">Email Address </label>
+            <div className="mc-field-group">
+              <label htmlFor="mce-EMAIL">Email Address </label>
               <input
                 type="email"
                 value=""
                 name="EMAIL"
-                class="required email"
+                className="required email"
                 id="mce-EMAIL"
               />
-              <div id="mce-responses" class="clear">
+              <div id="mce-responses" className="clear">
                 <div
-                  class="response"
+                  className="response"
                   id="mce-error-response"
                   style="display:none"
                 />
                 <div
-                  class="response"
+                  className="response"
                   id="mce-success-response"
                   style="display:none"
                 />
@@ -44,17 +45,17 @@ const Newsletterform = (props) => {
                 <input
                   type="text"
                   name="b_98c7ba21bb6d63c6d14827c6e_a51cc8153c"
-                  tabindex="-1"
+                  tabIndex="-1"
                   value=""
                 />
               </div>
-              <div class="clear">
+              <div className="clear">
                 <input
                   type="submit"
                   value="Subscribe"
                   name="subscribe"
                   id="mc-embedded-subscribe"
-                  class="button"
+                  className="button"
                 />
               </div>
             </div>
@@ -67,5 +68,4 @@ const Newsletterform = (props) => {
   );
 };
 
-
-export default Newsletterform
+export default Newsletterform;

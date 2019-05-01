@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import Menu from '../components/Menu';
+
+import config from '../utils/config';
+import Seo from '../components/Seo';
+import Layout from '../components/Layout';
 import Whitelabel from '../components/Whitelabel';
-import FooterMenu from '../components/FooterMenu';
 import Integrations from '../components/Integrations';
-import '../components/App.css';
 import WLFeaturesList from '../components/WLFeaturesList';
 
 class WhitelabelContent extends Component {
   render() {
     return (
-      <span>
-        <Menu />
+      <Layout>
+        <Seo
+          title={config.siteName}
+          description={config.description}
+          url={`${config.siteUrl}`}
+          image={config.image}
+        />
         <Whitelabel />
         <WLFeaturesList />
         <Integrations />
@@ -52,16 +58,17 @@ class WhitelabelContent extends Component {
 
         <span className="whitelabelCTAtitle">
           <h1 className="sectionTitle">
-            Want to know more?<br />
-            Want a quote or try a demo?<br />
+            Want to know more?
+            <br />
+            Want a quote or try a demo?
+            <br />
             Contact Us. No strings attached.
           </h1>
           <a className="wlButton" href="mailto:founders@dexlab.io">
             Get in Touch
           </a>
         </span>
-        <FooterMenu />
-      </span>
+      </Layout>
     );
   }
 }

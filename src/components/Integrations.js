@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Integrations = props => {
+const Integrations = () => {
   return (
     <span className="integrations">
       <span className="protocol uniswap">
