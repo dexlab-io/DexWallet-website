@@ -38,7 +38,7 @@ export default class IndexPage extends React.Component {
         <Quotes />
         <Whitelabel />
         <WlFeatures />
-        <MediumPosts />
+        {/*<MediumPosts /> */}
         <NewsletterForm /> 
       </Layout>
     );
