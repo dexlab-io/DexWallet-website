@@ -115,6 +115,49 @@
 .overlay ul li a:focus {
   color: #ffffff;
 }
+/* Form */
+.newsletter {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+    display: block;
+  }
+}
+
+.text {
+  color: #ffffff;
+  margin-right: 1rem;
+}
+
+.form {
+  justify-content: left;
+  display: grid;
+}
+
+.height {
+  margin-top: 1rem;
+}
+
+.button {
+  justify-content: flex-end;
+  display: flex;
+  margin-top: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  .button {
+    justify-content: center;
+    display: flex;
+    margin-top: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button input {
+    background: #fff;
+  }
+}
 
 /* Effects */
 .overlay-hugeinc {

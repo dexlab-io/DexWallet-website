@@ -73,7 +73,7 @@ class Menu extends React.Component {
               <div className="bar3" />
             </a>
             {isActive ? (
-              <section className="mobilemenu">
+              <section className="">
                 <a
                   className="mobilemenu"
                   target="_blank"
