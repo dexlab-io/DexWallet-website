@@ -14,6 +14,8 @@ import SavingAccount from '../components/SavingAccount';
 import Payments from '../components/Payments';
 import NativedApps from '../components/NativedApps';
 import WlFeatures from '../components/WlFeatures';
+import MediumPosts from '../components/MediumPosts';
+import NewsletterForm from '../components/NewsletterForm';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -36,8 +38,8 @@ export default class IndexPage extends React.Component {
         <Quotes />
         <Whitelabel />
         <WlFeatures />
-        {/* <MediumPosts /> */}
-        {/* <NewsletterForm /> */}
+        {/*<MediumPosts /> */}
+        <NewsletterForm /> 
       </Layout>
     );
   }
