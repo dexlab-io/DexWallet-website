@@ -23,7 +23,7 @@ class WhitelabelContent extends Component {
         <span className="integrations">
           <span className="singleOffer core">
             <span className="companyLogo">
-              <img src="/img/core.png" alt="iphone" border="0" height="150px" />
+              <img src="/img/core.png" alt="iphone" border="0" height="150" />
             </span>
             <h2>CORE</h2>
             <h5>
@@ -33,7 +33,7 @@ class WhitelabelContent extends Component {
           </span>
           <span className="singleOffer pro">
             <span className="companyLogo">
-              <img src="/img/pro.png" alt="iphone" border="0" height="150px" />
+              <img src="/img/pro.png" alt="iphone" border="0" height="150" />
             </span>
             <h2>PRO</h2>
             <h5>

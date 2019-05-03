@@ -9,7 +9,7 @@ const Social = () => {
           src="/img/discord.svg"
           alt="iphone"
           border="0"
-          height="20px"
+          height="20"
         />
       </a>
       <a className="socialIcons" href="https://twitter.com/dexlab_io">
@@ -18,7 +18,7 @@ const Social = () => {
           src="/img/twitter.svg"
           alt="iphone"
           border="0"
-          height="20px"
+          height="20"
         />
       </a>
       <a className="socialIcons" href="https://t.me/joindexlab">
@@ -27,7 +27,7 @@ const Social = () => {
           src="/img/telegram.svg"
           alt="iphone"
           border="0"
-          height="20px"
+          height="20"
         />
       </a>
       <a className="socialIcons" href="https://medium.com/dexlab-io">
@@ -36,7 +36,7 @@ const Social = () => {
           src="/img/medium.svg"
           alt="iphone"
           border="0"
-          height="20px"
+          height="20"
         />
       </a>
       <a className="socialIcons" href="https://github.com/dexlab-io">
@@ -45,7 +45,7 @@ const Social = () => {
           src="/img/github.svg"
           alt="iphone"
           border="0"
-          height="20px"
+          height="20"
         />
       </a>
     </section>

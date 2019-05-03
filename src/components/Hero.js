@@ -21,14 +21,14 @@ const Hero = () => {
               >
                 <img
                   src="img/appStore.svg"
-                  height="50px"
+                  height="50"
                   alt="Apple Store Button"
                 />
               </a>
             </div>
             {/* <div className="storebutton"><a
                                 href="https://play.google.com/store/apps/details?id=io.dexlab.dexwallet">
-                                <img src="/img/playStore.png" height="55px"></img>
+                                <img src="/img/playStore.png" height="55"></img>
                             </a></div> */}
           </span>
         </span>

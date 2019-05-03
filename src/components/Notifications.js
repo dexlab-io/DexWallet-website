@@ -9,7 +9,7 @@ const Notifications = props => {
             src="/img/customNotifications.svg"
             alt="iphone"
             border="0"
-            height="40px"
+            height="40"
           />
         </span>
         <h2>Custom</h2>
@@ -18,12 +18,7 @@ const Notifications = props => {
 
       <span className="notificationCard">
         <span className="companyLogo">
-          <img
-            src="/img/priceChange.svg"
-            alt="iphone"
-            border="0"
-            height="40px"
-          />
+          <img src="/img/priceChange.svg" alt="iphone" border="0" height="40" />
         </span>
         <h2>Price Change</h2>
         <h5>Stake LOOM to the pool and earn delegated PoS fees</h5>
@@ -35,7 +30,7 @@ const Notifications = props => {
             src="/img/liquidationPrice.svg"
             alt="iphone"
             border="0"
-            height="40px"
+            height="40"
           />
         </span>
         <h2>MakerDAO CDP Alert</h2>
@@ -48,7 +43,7 @@ const Notifications = props => {
             src="/img/aprVariation.svg"
             alt="iphone"
             border="0"
-            height="40px"
+            height="40"
           />
         </span>
         <h2>APR Variation</h2>

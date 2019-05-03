@@ -5,14 +5,14 @@ const Integrations = () => {
     <span className="integrations">
       <span className="protocol uniswap">
         <span className="companyLogo">
-          <img src="/img/uniswap.svg" alt="iphone" border="0" height="40px" />
+          <img src="/img/uniswap.svg" alt="iphone" border="0" height="40" />
         </span>
         <h2>Uniswap</h2>
         <h5>Provide and manage assets on liquidity pools</h5>
       </span>
       <span className="protocol compound">
         <span className="companyLogo">
-          <img src="/img/compound.svg" alt="iphone" border="0" height="40px" />
+          <img src="/img/compound.svg" alt="iphone" border="0" height="40" />
         </span>
         <h2>Compound</h2>
         <h5>Supply ETH, WETH, BAT, DAI and earn interest</h5>
@@ -20,7 +20,7 @@ const Integrations = () => {
 
       <span className="protocol maker">
         <span className="companyLogo">
-          <img src="/img/maker.svg" alt="iphone" border="0" height="40px" />
+          <img src="/img/maker.svg" alt="iphone" border="0" height="40" />
         </span>
         <h2>MakerDAO</h2>
         <h5>Collateralize Eth and borrow DAI in exchange</h5>
@@ -32,7 +32,7 @@ const Integrations = () => {
             src="/img/stakeCapital.svg"
             alt="iphone"
             border="0"
-            height="40px"
+            height="40"
           />
         </span>
         <h2>StakeCapital</h2>
