@@ -12,7 +12,7 @@ const Staking = () => {
           </h1>
           <h2 className="sectionSub">
             Native, in-wallet staking for everyone. Delegations, Redemptions and
-            staking performance traking on your phone
+            staking performance tracking on your phone
           </h2>
         </span>
       </span>

@@ -94,9 +94,9 @@ class Menu extends React.Component {
             <Link className="menuItem desktop" to="/whitelabel/">
               Whitelabel
             </Link>
-            <Link className="desktop headerButton" to="/pro/">
+            {/* <Link className="desktop headerButton" to="/pro/">
               Pro
-            </Link>
+            </Link> */}
             <button
               className="menuItem mobile"
               id="trigger-overlay"

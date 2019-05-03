@@ -9,7 +9,7 @@ const Hero = () => {
             The mobile wallet for the decentralized finance
           </h1>
           <h2 className="sectionSub animatedSubitle">
-            Borrowing, Landing, Exchange and native in-wallet Staking for
+            Borrowing, Lending, Exchange and native in-wallet Staking for
             everyone. Start building your passive income strategy now.
           </h2>
 
