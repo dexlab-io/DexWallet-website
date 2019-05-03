@@ -15,7 +15,7 @@ export default class HTML extends React.Component {
           <title>DexWallet - The only Wallet you need by Dexlab</title>
 
           {/* Add custom css or scripts here */}
-
+          <script src="https://medium-widget.pixelpoint.io/widget.js" />
           {/* Add custom css or scripts here */}
 
           {this.props.headComponents}
