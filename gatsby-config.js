@@ -37,6 +37,6 @@ module.exports = {
         icon: './static/images/logo-1024.png',
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
   ],
 };
