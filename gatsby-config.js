@@ -37,6 +37,12 @@ module.exports = {
         icon: './static/images/logo-1024.png',
       },
     },
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        cacheId: `dexwallet-plugin-offline`,
+      },
+    },
+    'gatsby-plugin-remove-serviceworker',
   ],
 };
