@@ -1,11 +1,12 @@
-// exports.onServiceWorkerUpdateReady= () => window.location.reload(true);
-
 exports.onServiceWorkerUpdateFound = () => {
   window.navigator.serviceWorker
     .getRegistrations()
-    .then((registrations) => {
+    .then(function(registrations) {
       for (const registration of registrations) {
         registration.unregister();
+        // setTimeout(() => {
+        //   window.location.reload(true);
+        // }, 1000);
       }
     });
 };
