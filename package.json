@@ -14,10 +14,11 @@
   "homepage": "https://github.com/perminder-klair/kickoff-gatsbyjs#readme",
   "scripts": {
     "start": "npm run develop",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --no-cache",
     "serve": "gatsby serve",
     "build": "gatsby build",
-    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\""
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\"",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "gatsby": "^2.3.3",
