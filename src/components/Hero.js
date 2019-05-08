@@ -6,7 +6,7 @@ const Hero = () => {
       <span className="columnText">
         <span className="leftContentText">
           <h1 className="sectionTitle animatedTitle">
-            The mobile wallet for the decentralized finance
+            The mobile wallet for decentralized finance
           </h1>
           <h2 className="sectionSub animatedSubitle">
             Borrowing, Lending, Exchange and native in-wallet Staking for
