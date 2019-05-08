@@ -1,9 +1,11 @@
-exports.onServiceWorkerUpdateReady= () => window.location.reload(true);
+// exports.onServiceWorkerUpdateReady= () => window.location.reload(true);
 
 exports.onServiceWorkerUpdateFound = () => {
-  window.navigator.serviceWorker.getRegistrations().then(function(registrations) {
-    for (let registration of registrations) {
-      registration.unregister();
-    }
-  });
-}
+  window.navigator.serviceWorker
+    .getRegistrations()
+    .then((registrations) => {
+      for (const registration of registrations) {
+        registration.unregister();
+      }
+    });
+};

@@ -43,5 +43,6 @@ module.exports = {
         cacheId: `dexwallet-plugin-offline`,
       },
     },
+    'gatsby-plugin-remove-serviceworker',
   ],
 };
