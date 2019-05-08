@@ -12,6 +12,9 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <meta http-equiv='cache-control' content='no-cache'>
+          <meta http-equiv='expires' content='0'>
+          <meta http-equiv='pragma' content='no-cache'></meta>
           <title>DexWallet - The only Wallet you need by Dexlab</title>
 
           {/* Add custom css or scripts here */}
