@@ -70,8 +70,14 @@ class Menu extends React.Component {
             <a
               className="menuItem desktop"
               target="_blank"
-              rel="noopener noreferrer"
-              href="http://www.dexpay.me"
+              href="https://defitracker.io/"
+            >
+              Defitracker.io
+            </a>
+            <a
+              className="menuItem desktop"
+              target="_blank"
+              href="https://www.dexpay.me"
             >
               Dexpay.me
             </a>
@@ -120,6 +126,15 @@ class Menu extends React.Component {
             </button> */}
             <nav>
               <ul>
+                <li>
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://defitracker.io/"
+                  >
+                    Defitracker.io
+                  </a>
+                </li>
                 <li>
                   <a
                     rel="noopener noreferrer"
