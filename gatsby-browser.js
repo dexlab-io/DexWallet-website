@@ -4,9 +4,9 @@ exports.onServiceWorkerUpdateFound = () => {
     .then(function(registrations) {
       for (const registration of registrations) {
         registration.unregister();
-        setTimeout(() => {
-          window.location.reload(true);
-        }, 1000);
+        // setTimeout(() => {
+        //   window.location.reload(true);
+        // }, 1000);
       }
     });
 };
