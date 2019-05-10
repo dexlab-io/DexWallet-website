@@ -5,9 +5,9 @@ const Comparison = () => {
     <span className="integrations comparison">
       <span className="plan planBasic">
         <span className="planTitle">Basic</span>
-        <span className="planFeature">
+        {/* <span className="planFeature">
           <strong>Free</strong>
-        </span>
+        </span> */}
         <span className="planFeature">1 Wallet</span>
         <span className="planFeature">DAI, xDAI and 500+ Erc20</span>
         <span className="planFeature">Uniswap, Compound, Uniswap</span>
@@ -15,7 +15,7 @@ const Comparison = () => {
         <span className="planFeature">Mobile native dApps</span>
         <span className="planFeature">Instant Token Swap</span>
         <span className="planFeature">Dexpay support</span>
-        <span className="planFeature">Ens name</span>
+        <span className="planFeature">Ens names support</span>
         {/* <span className="planFeature mobileEmpty" /> */}
         <span className="planFeature">-</span>
         <span className="planFeature">-</span>
@@ -29,18 +29,24 @@ const Comparison = () => {
         <span className="planFeature">-</span>
         <span className="planFeature">-</span>
         <span className="planFeature">-</span>
-        <a className="wlButton ghost mobileEmpty" href="#">
+        <span className="planFeature">-</span>
+
+        <a
+          className="wlButton ghost mobileEmpty"
+          href="https://itunes.apple.com/us/app/dexwallet/id1434816150?ls=1&mt=8"
+          target="_blank"
+        >
           Download
         </a>
       </span>
 
       <span className="plan planPro">
         <span className="planTitle red">Pro</span>
-        <span className="planFeature">
+        {/* <span className="planFeature">
           <strong>$89,00 / 2years</strong>
-        </span>
+        </span> */}
         <span className="planFeature">
-          <strong>20 Wallets</strong>
+          <strong>Multiple Wallets</strong>
         </span>
         <span className="planFeature">DAI, xDAI and 500+ Erc20</span>
         <span className="planFeature">Uniswap, Compound, Uniswap</span>
@@ -56,7 +62,7 @@ const Comparison = () => {
           <strong>Smart Notifications</strong>
         </span>
         <span className="planFeature">
-          <strong>Watchmode</strong>
+          <strong>Watch-mode</strong>
         </span>
         <span className="planFeature">
           <strong>Balance Overview</strong>
@@ -68,7 +74,7 @@ const Comparison = () => {
           <strong>Deep Charts & Historicals</strong>
         </span>
         <span className="planFeature">
-          <strong>Networks & Toneks preferences</strong>
+          <strong>Networks & Tokens preferences</strong>
         </span>
         <span className="planFeature">
           <strong>Automatic Savings</strong>
@@ -84,6 +90,9 @@ const Comparison = () => {
         </span>
         <span className="planFeature">
           <strong>Addressbook</strong>
+        </span>
+        <span className="planFeature">
+          <strong>Premium Cards</strong>
         </span>
 
         <a className="wlButton" href="#">

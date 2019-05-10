@@ -47,7 +47,7 @@ const Notifications = props => {
           />
         </span>
         <h2>APR Variation</h2>
-        <h5>Supply ETH, WETH, BAT, DAI and ear interest</h5>
+        <h5>Supply ETH, WETH, BAT, DAI and earn interest</h5>
       </span>
     </span>
   );

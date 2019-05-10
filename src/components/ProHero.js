@@ -1,5 +1,6 @@
 import React from 'react';
 
+  <script src="https://js.stripe.com/v3" />;
 const PictureFull = props => {
   return (
     <section className={props.class}>
@@ -9,9 +10,13 @@ const PictureFull = props => {
           <h2 className="sectionSub">{props.subtitle}</h2>
         </span>
       </span>
-      <a className="wlButton reduceMargin" href="#">
+      <button
+        className="wlButton reduceMargin"
+        id="checkout-button-sku_F2c5J8HckcrDg1"
+        role="link"
+      >
         Preorder
-      </a>
+      </button>
     </section>
   );
 };
