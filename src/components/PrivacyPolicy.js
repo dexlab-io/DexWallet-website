@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import theme from '../utils/theme';
 
 const Container = styled.section`
-  padding-top: 0rem;
+  color: white;
+  padding-top: 2%;
   .content {
     padding-top: 5rem;
     padding-bottom: 5rem;
