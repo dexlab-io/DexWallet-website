@@ -5,10 +5,10 @@ import theme from '../utils/theme';
 
 const Container = styled.section`
   color: white;
-  padding: 4%;
+  padding: 4% 8%;
   .content {
     @media only screen and (max-width: 600px) {
-      padding-top: 2rem;
+      padding: 2rem;
     }
   }
   h1 {
