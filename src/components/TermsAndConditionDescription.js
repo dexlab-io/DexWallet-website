@@ -4,12 +4,9 @@ import { Link } from 'gatsby';
 import theme from '../utils/theme';
 
 const Container = styled.section`
-  padding-top: 0rem;
   color: white;
-  padding-top: 2%;
+  padding: 4%;
   .content {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
     @media only screen and (max-width: 600px) {
       padding-top: 2rem;
     }
