@@ -6,8 +6,14 @@ const PictureFull = props => {
     <section className={props.class}>
       <span className="singleColumnText">
         <span className="centerContentText">
-          <h1 className="sectionTitle">{props.title}</h1>
-          <h2 className="sectionSub">{props.subtitle}</h2>
+          <h1 className="sectionTitle biggest">{props.title}</h1>
+          {/* <h2 className="sectionSub bigger">{props.subtitle}</h2> */}
+          <h2 className="sectionSub bigger">
+            Become a Lifetime Supporter for $249.99 now. We will always thank
+            you.
+            <br />
+            (only 997 spot left)
+          </h2>
         </span>
       </span>
       <button

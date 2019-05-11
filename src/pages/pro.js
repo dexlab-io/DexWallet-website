@@ -10,6 +10,7 @@ import Notifications from '../components/Notifications';
 import BigX from '../components/BigX';
 import ProHero from '../components/ProHero';
 import Comparison from '../components/Comparison';
+import SocialProof from '../components/SocialProof';
 // import SavingAccount from '../components/SavingAccount';
 // import Payments from '../components/Payments';
 // import NativedApps from '../components/NativedApps';
@@ -30,9 +31,11 @@ class Pro extends Component {
         <BigX />
         <ProHero
           title="Dexwallet Pro"
-          subtitle="Preorder it now for $249.99 and become a Lifetime Supporter. (limited to 1000 users)"
+          // subtitle=""
           class="proHero"
         />
+
+        <SocialProof />
 
         <h1 className="centeredTitle">Smart Notifications</h1>
         <Notifications />
@@ -111,9 +114,7 @@ class Pro extends Component {
           <span className="centerContentText">
             <h1 className="sectionTitle">Go Pro now</h1>
             <h2 className="sectionSub">
-              Only $89.99 per year
-              <br />
-              ($8.99 / mo)
+              Only $89.99 per year or $8.99/mo.
               <br />
               Preorder it now for $249.99 and become a Lifetime Supporter.
             </h2>
