@@ -912,6 +912,7 @@ button.newsletterButton {
   }
   .biggest {
     font-size: var(--text-big);
+    line-height: 3rem;
   }
   .desktop {
     display: none !important;
