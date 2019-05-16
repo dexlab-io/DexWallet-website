@@ -7,7 +7,6 @@ import './layout.css';
 import config from '../utils/config';
 import Menu from './Menu';
 import FooterMenu from './FooterMenu';
-import BuiltOnEthereum from './builtOnEthereum';
 
 const Container = styled.div``;
 
@@ -22,7 +21,6 @@ const IndexLayout = ({ children }) => (
     <Menu />
     <Container>{children}</Container>
     <FooterMenu />
-    <BuiltOnEthereum />
   </div>
 );
 
