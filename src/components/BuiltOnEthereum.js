@@ -30,7 +30,9 @@ const BuiltOnEthereum = () => {
   return (
     <Container>
       <IMG>
-        <img src="img/ethDark.svg" height="50" alt="Built on Ethereum" />
+        <a href="https://www.ethereum.org/" target="_blank">
+          <img src="../img/ethDark.svg" height="50" alt="Built on Ethereum" />
+        </a>
       </IMG>
     </Container>
   );
