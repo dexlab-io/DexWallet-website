@@ -7,7 +7,7 @@ import './layout.css';
 import config from '../utils/config';
 import Menu from './Menu';
 import FooterMenu from './FooterMenu';
-import BuiltOnEthereum from './builtOnEthereum';
+import BuiltOnEthereum from './BuiltOnEthereum';
 
 const Container = styled.div``;
 
