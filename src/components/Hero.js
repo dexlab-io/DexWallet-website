@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
 
           <span className="storeButtonContainer">
             <div className="storebutton">
-              <a
+              <OutboundLink
                 className="storebutton"
                 href="https://itunes.apple.com/us/app/dexwallet/id1434816150?ls=1&mt=8"
               >
@@ -24,7 +25,7 @@ const Hero = () => {
                   height="50"
                   alt="Apple Store Button"
                 />
-              </a>
+              </OutboundLink>
             </div>
             {/* <div className="storebutton"><a
                                 href="https://play.google.com/store/apps/details?id=io.dexlab.dexwallet">

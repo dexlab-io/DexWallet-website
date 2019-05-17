@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const footerMenu = () => {
   return (
@@ -9,17 +10,20 @@ const footerMenu = () => {
       <a className="menuItem desktop" href="privacy-policy.html">
         Privacy
       </a>
-      <a
+      <OutboundLink
         className="menuItem desktop"
         target="_blank"
         rel="noopener noreferrer"
         href="https://dexwallet.freshdesk.com/"
       >
         Support
-      </a>
-      <a className="menuItem desktop" href="mailto:founders@dexlab.io">
+      </OutboundLink>
+      <OutboundLink
+        className="menuItem desktop"
+        href="mailto:founders@dexlab.io"
+      >
         Business Inquiries
-      </a>
+      </OutboundLink>
     </section>
   );
 };

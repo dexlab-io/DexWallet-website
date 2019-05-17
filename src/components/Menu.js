@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import './Menu.css';
 
@@ -67,36 +68,36 @@ class Menu extends React.Component {
             </Link>
           </section>
           <section className="menu">
-            <a
+            <OutboundLink
               className="menuItem desktop"
               target="_blank"
               href="https://defitracker.io/"
             >
               Defitracker.io
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               className="menuItem desktop"
               target="_blank"
               href="https://www.dexpay.me"
             >
               Dexpay.me
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               className="menuItem desktop"
               target="_blank"
               rel="noopener noreferrer"
               href="https://medium.com/dexlab-io/"
             >
               Blog
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               className="menuItem desktop"
               target="_blank"
               rel="noopener noreferrer"
               href="mailto:founders@dexlab.io"
             >
               Contacts
-            </a>
+            </OutboundLink>
             <Link className="menuItem desktop" to="/whitelabel/">
               Whitelabel
             </Link>
@@ -127,58 +128,58 @@ class Menu extends React.Component {
             <nav>
               <ul>
                 <li>
-                  <a
+                  <OutboundLink
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://defitracker.io/"
                   >
                     Defitracker.io
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexlab.io/"
                   >
                     Dexlab.io
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexpay.me/"
                   >
                     Dexpay.me
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexwallet.io/team_and_vision"
                   >
                     Team &amp; Vision
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://medium.com/dexlab-io"
                   >
                     Blog
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexwallet.io/whitelabel"
                   >
                     Whitelabel
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
                   <a className="" href="founders@dexlab.io">
@@ -186,22 +187,22 @@ class Menu extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexwallet.io/terms-and-conditions/"
                   >
                     Terms &amp; Conditions
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexwallet.io/privacy-policy/"
                   >
                     Privacy
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
                   <a

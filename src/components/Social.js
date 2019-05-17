@@ -1,9 +1,10 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Social = () => {
   return (
     <section className="social">
-      <a className="socialIcons" href="https://dexpay.me/discord">
+      <OutboundLink className="socialIcons" href="https://dexpay.me/discord">
         <img
           className="supportPicture"
           src="/img/discord.svg"
@@ -11,8 +12,11 @@ const Social = () => {
           border="0"
           height="20"
         />
-      </a>
-      <a className="socialIcons" href="https://twitter.com/dexlab_io">
+      </OutboundLink>
+      <OutboundLink
+        className="socialIcons"
+        href="https://twitter.com/dexlab_io"
+      >
         <img
           className="supportPicture"
           src="/img/twitter.svg"
@@ -20,8 +24,8 @@ const Social = () => {
           border="0"
           height="20"
         />
-      </a>
-      <a className="socialIcons" href="https://t.me/joindexlab">
+      </OutboundLink>
+      <OutboundLink className="socialIcons" href="https://t.me/joindexlab">
         <img
           className="supportPicture"
           src="/img/telegram.svg"
@@ -29,8 +33,8 @@ const Social = () => {
           border="0"
           height="20"
         />
-      </a>
-      <a className="socialIcons" href="https://medium.com/dexlab-io">
+      </OutboundLink>
+      <OutboundLink className="socialIcons" href="https://medium.com/dexlab-io">
         <img
           className="supportPicture"
           src="/img/medium.svg"
@@ -38,8 +42,8 @@ const Social = () => {
           border="0"
           height="20"
         />
-      </a>
-      <a className="socialIcons" href="https://github.com/dexlab-io">
+      </OutboundLink>
+      <OutboundLink className="socialIcons" href="https://github.com/dexlab-io">
         <img
           className="supportPicture"
           src="/img/github.svg"
@@ -47,7 +51,7 @@ const Social = () => {
           border="0"
           height="20"
         />
-      </a>
+      </OutboundLink>
     </section>
   );
 };
