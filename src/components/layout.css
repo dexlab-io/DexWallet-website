@@ -11,8 +11,7 @@
   --text-small: 0.8rem;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   background-color: var(--almost-black);
   font-family: 'Rubik', sans-serif;
@@ -27,12 +26,12 @@ body {
   --almost-black: #0a0a0a;
   --text-big: 3rem;
   --text-medium: 1.1rem;
+  --text-medium-big: 1.5rem;
   --text-prettysmall: 0.9rem;
   --text-small: 0.8rem;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   background-color: var(--almost-black);
   font-family: 'Rubik', sans-serif;
@@ -391,6 +390,7 @@ video.heroVid {
   text-align: center;
   padding: 4% 2%;
   border-radius: 10px;
+  height: 122px;
 }
 
 .plan {
@@ -756,8 +756,16 @@ img.supportPicture {
 .sectionSub {
   font-family: 'Rubik', sans-serif;
   font-size: var(--text-medium);
-  line-height: 1.7rem;
+  line-height: auto.7rem;
   font-weight: 300;
+}
+
+.bigger {
+  font-size: calc(var(--text-medium) + 0.5rem);
+}
+
+.biggest {
+  font-size: calc(var(--text-big) + 0.5rem);
 }
 
 .mobile {
@@ -899,6 +907,13 @@ button.newsletterButton {
     font-size: 1rem;
     line-height: 1.4rem;
   }
+  .bigger {
+    font-size: var(--text-medium);
+  }
+  .biggest {
+    font-size: var(--text-big);
+    line-height: 3rem;
+  }
   .desktop {
     display: none !important;
   }
@@ -955,13 +970,7 @@ button.newsletterButton {
     color: #000000;
     background-color: #ffffff !important;
     background: #ffffff !important;
-    background: -webkit-gradient(
-      linear,
-      center top,
-      center bottom,
-      from(#ffffff),
-      to(#ffffff)
-    );
+    background: -webkit-gradient( linear, center top, center bottom, from(#ffffff), to(#ffffff));
     background: -webkit-linear-gradient(#ffffff, #ffffff);
     background: -moz-linear-gradient(#ffffff, #ffffff);
     background: -o-linear-gradient(#ffffff, #ffffff);

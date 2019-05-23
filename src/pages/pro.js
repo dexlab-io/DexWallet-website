@@ -10,11 +10,13 @@ import Notifications from '../components/Notifications';
 import BigX from '../components/BigX';
 import ProHero from '../components/ProHero';
 import Comparison from '../components/Comparison';
+import SocialProof from '../components/SocialProof';
 // import SavingAccount from '../components/SavingAccount';
 // import Payments from '../components/Payments';
 // import NativedApps from '../components/NativedApps';
 // import Quotes from '../components/Quotes';
 // import Staking from '../components/Staking';
+  <script src="https://js.stripe.com/v3" />;
 
 class Pro extends Component {
   render() {
@@ -29,22 +31,24 @@ class Pro extends Component {
         <BigX />
         <ProHero
           title="Dexwallet Pro"
-          subtitle="Preorder it now and get a limited offer for only $89,00 per 2 years (1 year free)"
+          // subtitle=""
           class="proHero"
         />
+
+        <SocialProof />
 
         <h1 className="centeredTitle">Smart Notifications</h1>
         <Notifications />
 
         <PictureLeft
-          title="Multi-wallet & Watchmode"
-          subtitle="You will be able to create and import all the wallets you need, also in watchmode if you want to maximize security"
+          title="Multi-wallet & Watch-hmode"
+          subtitle="You will be able to create and import all the wallets you need, also in watch-mode if you want to maximize security"
           url="/img/wallets.jpg"
         />
 
         <PictureRight
           title="All your balances in one view"
-          subtitle="Track your entire porfolio, no matter how many wallets and sources you will be always up to date"
+          subtitle="Track your entire portfolio, no matter how many wallets and sources you will be always up to date"
           url="/img/balances.jpg"
         />
 
@@ -82,7 +86,7 @@ class Pro extends Component {
 
         <PictureLeft
           title="Bluetooth Ledger Support"
-          subtitle="Connect your last hardware wallet via Bluetooth in just few seconds. No USB needed"
+          subtitle="Connect your last hardware wallet via Bluetooth in just a few seconds. No USB needed"
           url="/img/ledger.jpg"
         />
 
@@ -100,16 +104,19 @@ class Pro extends Component {
           url="/img/addressbook.jpg"
         />
 
+        <PictureRight
+          title="Premium Network Cards"
+          subtitle="For our Lifetime Supporters only, we are designing exclusive premium networks cards. Crypto has never been so stylish"
+          url="/img/lifetimecards.jpg"
+        />
+
         <span className="whitelabelCTAtitle">
           <span className="centerContentText">
             <h1 className="sectionTitle">Go Pro now</h1>
             <h2 className="sectionSub">
-              Only $89,00 per year
+              Only $89.99 per year or $8.99/mo.
               <br />
-              ($9,50 / mo)
-              <br />
-              Preorder a yearly subscription now and we will give you the second
-              year for free
+              Preorder it now for $249.99 and become a Lifetime Supporter.
             </h2>
           </span>
           <a className="wlButton" href="#">
