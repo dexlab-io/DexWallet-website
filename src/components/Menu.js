@@ -87,7 +87,7 @@ class Menu extends React.Component {
               rel="noopener noreferrer"
               href="https://hackmd.io/@8O08261_SpWdZUBJKxeF5Q/rk7VotSpE?type=view"
             >
-              Team &amp; Vision
+              Vision
             </a>
             <a
               className="menuItem desktop"
@@ -167,7 +167,7 @@ class Menu extends React.Component {
                     target="_blank"
                     href="https://hackmd.io/@8O08261_SpWdZUBJKxeF5Q/rk7VotSpE?type=view"
                   >
-                    Team &amp; Vision
+                    Vision
                   </a>
                 </li>
                 <li>
