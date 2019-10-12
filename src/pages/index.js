@@ -16,6 +16,7 @@ import NativedApps from '../components/NativedApps';
 import WlFeatures from '../components/WlFeatures';
 import MediumPosts from '../components/MediumPosts';
 import NewsletterForm from '../components/NewsletterForm';
+import MoonPay from '../components/MoonPay';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -33,6 +34,7 @@ export default class IndexPage extends React.Component {
         <Integrations />
         <Staking />
         <SavingAccount />
+        <MoonPay />
         <NativedApps />
         <Payments />
         <Quotes />
