@@ -85,6 +85,14 @@ class Menu extends React.Component {
               className="menuItem desktop"
               target="_blank"
               rel="noopener noreferrer"
+              href="https://hackmd.io/@8O08261_SpWdZUBJKxeF5Q/rk7VotSpE?type=view"
+            >
+              Vision
+            </a>
+            <a
+              className="menuItem desktop"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://medium.com/dexlab-io/"
             >
               Blog
@@ -157,9 +165,9 @@ class Menu extends React.Component {
                   <a
                     rel="noopener noreferrer"
                     target="_blank"
-                    href="https://www.dexwallet.io/team_and_vision"
+                    href="https://hackmd.io/@8O08261_SpWdZUBJKxeF5Q/rk7VotSpE?type=view"
                   >
-                    Team &amp; Vision
+                    Vision
                   </a>
                 </li>
                 <li>
