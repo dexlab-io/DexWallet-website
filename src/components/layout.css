@@ -11,7 +11,8 @@
   --text-small: 0.8rem;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   background-color: var(--almost-black);
   font-family: 'Rubik', sans-serif;
@@ -31,7 +32,8 @@ html, body {
   --text-small: 0.8rem;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   background-color: var(--almost-black);
   font-family: 'Rubik', sans-serif;
@@ -541,6 +543,31 @@ video.heroVid {
   border: #ffffff 1px solid;
 }
 
+.MoonPayButton {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  border-radius: 2px;
+  border: none;
+  margin: 2% 20%;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Rubik', sans-serif;
+  font-size: var(--text-medium);
+  font-weight: 500;
+  text-align: center;
+}
+
+.MoonPayButton:hover {
+  background: #1b1717;
+  color: #ffffff;
+}
+
+.MoonPayButton.ghost {
+  background: none;
+  border: #ffffff 1px solid;
+}
+
 .reduceMargin {
   margin: -2% 2%;
 }
@@ -970,7 +997,13 @@ button.newsletterButton {
     color: #000000;
     background-color: #ffffff !important;
     background: #ffffff !important;
-    background: -webkit-gradient( linear, center top, center bottom, from(#ffffff), to(#ffffff));
+    background: -webkit-gradient(
+      linear,
+      center top,
+      center bottom,
+      from(#ffffff),
+      to(#ffffff)
+    );
     background: -webkit-linear-gradient(#ffffff, #ffffff);
     background: -moz-linear-gradient(#ffffff, #ffffff);
     background: -o-linear-gradient(#ffffff, #ffffff);
