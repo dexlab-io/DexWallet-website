@@ -8,6 +8,7 @@ import config from '../utils/config';
 import Menu from './Menu';
 import FooterMenu from './FooterMenu';
 import BuiltOnEthereum from './BuiltOnEthereum';
+import DiscordBanner from './DiscordBanner';
 
 const Container = styled.div``;
 
@@ -23,6 +24,7 @@ const IndexLayout = ({ children }) => (
     <Container>{children}</Container>
     <FooterMenu />
     <BuiltOnEthereum />
+    <DiscordBanner />
   </div>
 );
 
