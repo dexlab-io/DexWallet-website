@@ -108,6 +108,14 @@ class Menu extends React.Component {
             <Link className="menuItem desktop" to="/whitelabel/">
               Whitelabel
             </Link>
+            <a
+              className="buyCryptoButton"
+              target="_blank"
+              href="https://buy.moonpay.io/?defaultCurrencyCode=ETH&colorCode=%000&apiKey=pk_live_luey2OpUFw5tc4fzYvYwwkXXmfwjZF9"
+              rel="noopener noreferrer"
+            >
+              Buy Crypto
+            </a>
             {/* <Link className="desktop headerButton" to="/pro/">
               Pro
             </Link> */}
