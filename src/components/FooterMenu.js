@@ -20,6 +20,10 @@ const footerMenu = () => {
       <a className="menuItem desktop" href="mailto:founders@dexlab.io">
         Business Inquiries
       </a>
+      <a className="menuItem desktop" target="_blank"
+ href="https://drive.google.com/drive/folders/1JGgJEmAmENdB95PidPJoxBjrbHHaiZro?usp=sharing">
+        Presskit
+      </a>
     </section>
   );
 };
