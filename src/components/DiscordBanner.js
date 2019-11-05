@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useMixpanel } from 'gatsby-plugin-mixpanel';
 
 const Container = styled.div`
   position: fixed;
@@ -59,7 +60,7 @@ const Close = styled.img`
   cursor: pointer;
 `;
 
-const Linked = styled.a`
+const A = styled.a`
   color: #fff;
   &:hover {
     color: #fff;
@@ -69,22 +70,39 @@ const Linked = styled.a`
 
 function DiscordBannerDumb(props) {
   console.log(props);
+  const mixpanel = useMixpanel();
+
   return (
     <Container>
-      <Linked>
+      <A
+        href="https://discord.gg/eJTYNUF"
+        onClick={() => {
+          mixpanel.track('Join Discord');
+        }}
+      >
         <IMG
           src="../img/DiscordLogoFull.png"
           height="50"
           alt="Built on Ethereum"
         />
-      </Linked>
+      </A>
       <TextContainer>
-        <Linked>
+        <A
+          href="https://discord.gg/eJTYNUF"
+          onClick={() => {
+            mixpanel.track('Join Discord');
+          }}
+        >
           <Title>Join the conversation!</Title>
-        </Linked>
-        <Linked>
+        </A>
+        <A
+          href="https://discord.gg/eJTYNUF"
+          onClick={() => {
+            mixpanel.track('Join Discord');
+          }}
+        >
           <Sub>Meet among the smartes people on DeFi!</Sub>
-        </Linked>
+        </A>
       </TextContainer>
       <Close
         src="https://assets.website-files.com/5c73e3cf2d05ce73f79a3d10/5d8dddc086d4c075ee18cdff_Group.svg"
