@@ -6,13 +6,15 @@ const Staking = () => {
       <span className="singleColumnText">
         <span className="centerContentText">
           <h1 className="sectionTitle">
-            Pos Staking
+            DeFi Apps
             <br />
             at your fingertip
           </h1>
           <h2 className="sectionSub">
-            Native, in-wallet staking for everyone. Delegations, Redemptions and
-            staking performance tracking on your phone
+            Native, in-wallet DeFi solutions for everyone. Check your DeFi
+            positions across protocols. Supply liquidity to Fulcrum and
+            Compound. Enjoy easy xDAI ↔️ DAI bridge and KyberSwap competitive
+            rates.
           </h2>
         </span>
       </span>

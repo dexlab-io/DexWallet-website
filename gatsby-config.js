@@ -19,6 +19,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-mixpanel',
+      options: {
+        apiToken: 'cb3d620820c40d3654ea41bf6fb6d8ef',
+        enableOnDevMode: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: config.themeColor,

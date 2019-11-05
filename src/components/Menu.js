@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { withMixpanel } from 'gatsby-plugin-mixpanel';
 
 import './Menu.css';
 
@@ -53,12 +54,17 @@ class Menu extends React.Component {
 
   render() {
     const { mobileMenuVisible } = this.state;
-
+    const { mixpanel } = this.props;
     return (
       <React.Fragment>
         <section className="header">
           <section className="menuLogo">
-            <Link to="./">
+            <Link
+              onClick={() => {
+                mixpanel.track('Logo back Home');
+              }}
+              to="./"
+            >
               <img
                 src="/img/DexwalletLogo.svg"
                 alt="dexwallet logo"
@@ -68,6 +74,9 @@ class Menu extends React.Component {
           </section>
           <section className="menu">
             <a
+              onClick={() => {
+                mixpanel.track('menu link DefiTracker');
+              }}
               className="menuItem desktop"
               target="_blank"
               href="https://defitracker.io/"
@@ -75,6 +84,9 @@ class Menu extends React.Component {
               Defitracker.io
             </a>
             <a
+              onClick={() => {
+                mixpanel.track('menu link Dexpay');
+              }}
               className="menuItem desktop"
               target="_blank"
               href="https://www.dexpay.me"
@@ -82,6 +94,9 @@ class Menu extends React.Component {
               Dexpay.me
             </a>
             <a
+              onClick={() => {
+                mixpanel.track('menu link Vision');
+              }}
               className="menuItem desktop"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,6 +105,9 @@ class Menu extends React.Component {
               Vision
             </a>
             <a
+              onClick={() => {
+                mixpanel.track('menu link Medium');
+              }}
               className="menuItem desktop"
               target="_blank"
               rel="noopener noreferrer"
@@ -98,6 +116,9 @@ class Menu extends React.Component {
               Blog
             </a>
             <a
+              onClick={() => {
+                mixpanel.track('menu link Mail');
+              }}
               className="menuItem desktop"
               target="_blank"
               rel="noopener noreferrer"
@@ -105,9 +126,26 @@ class Menu extends React.Component {
             >
               Contacts
             </a>
-            <Link className="menuItem desktop" to="/whitelabel/">
+            <Link
+              onClick={() => {
+                mixpanel.track('menu link Whitelabel');
+              }}
+              className="menuItem desktop"
+              to="/whitelabel/"
+            >
               Whitelabel
             </Link>
+            <a
+              onClick={() => {
+                mixpanel.track('menu link BuyCrypto');
+              }}
+              className="buyCryptoButton desktop"
+              target="_blank"
+              href="https://buy.moonpay.io/?defaultCurrencyCode=ETH&colorCode=%000&apiKey=pk_live_luey2OpUFw5tc4fzYvYwwkXXmfwjZF9"
+              rel="noopener noreferrer"
+            >
+              Buy Crypto
+            </a>
             {/* <Link className="desktop headerButton" to="/pro/">
               Pro
             </Link> */}
@@ -136,6 +174,9 @@ class Menu extends React.Component {
               <ul>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link DeFiTracker');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://defitracker.io/"
@@ -145,6 +186,9 @@ class Menu extends React.Component {
                 </li>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link Dexlab');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexlab.io/"
@@ -154,6 +198,9 @@ class Menu extends React.Component {
                 </li>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link Dexpay');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexpay.me/"
@@ -163,6 +210,9 @@ class Menu extends React.Component {
                 </li>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link Vision');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://hackmd.io/@8O08261_SpWdZUBJKxeF5Q/rk7VotSpE?type=view"
@@ -172,6 +222,9 @@ class Menu extends React.Component {
                 </li>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link Medium');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://medium.com/dexlab-io"
@@ -181,6 +234,9 @@ class Menu extends React.Component {
                 </li>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link Whitelabel');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexwallet.io/whitelabel"
@@ -189,12 +245,21 @@ class Menu extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a className="" href="founders@dexlab.io">
+                  <a
+                    onClick={() => {
+                      mixpanel.track('menu link Mail');
+                    }}
+                    className=""
+                    href="founders@dexlab.io"
+                  >
                     Contacts
                   </a>
                 </li>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link Terms and Conditions');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexwallet.io/terms-and-conditions/"
@@ -204,6 +269,9 @@ class Menu extends React.Component {
                 </li>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link Privacy Policy');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.dexwallet.io/privacy-policy/"
@@ -213,6 +281,9 @@ class Menu extends React.Component {
                 </li>
                 <li>
                   <a
+                    onClick={() => {
+                      mixpanel.track('menu link Freshdesk');
+                    }}
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://dexwallet.freshdesk.com/"
@@ -221,7 +292,13 @@ class Menu extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a className="" href="founders@dexlab.io">
+                  <a
+                    onClick={() => {
+                      mixpanel.track('menu link Mail');
+                    }}
+                    className=""
+                    href="founders@dexlab.io"
+                  >
                     Business Inquiries
                   </a>
                 </li>
@@ -234,4 +311,4 @@ class Menu extends React.Component {
   }
 }
 
-export default Menu;
+export default withMixpanel()(Menu);
