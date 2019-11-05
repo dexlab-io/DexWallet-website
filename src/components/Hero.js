@@ -1,6 +1,9 @@
 import React from 'react';
+import { useMixpanel } from 'gatsby-plugin-mixpanel';
 
 const Hero = () => {
+  const mixpanel = useMixpanel();
+
   return (
     <section className="hero">
       <span className="columnText">
@@ -16,6 +19,9 @@ const Hero = () => {
           <span className="storeButtonContainer">
             <div className="storebutton">
               <a
+                onClick={() => {
+                  mixpanel.track('AppStore hero button');
+                }}
                 className="storebutton"
                 href="https://itunes.apple.com/us/app/dexwallet/id1434816150?ls=1&mt=8"
               >
