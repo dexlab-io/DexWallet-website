@@ -67,7 +67,8 @@ const Linked = styled.a`
   }
 `;
 
-const DiscordBanner = () => {
+function DiscordBannerDumb(props) {
+  console.log(props);
   return (
     <Container>
       <Linked>
@@ -91,9 +92,28 @@ const DiscordBanner = () => {
         data-w-id="b6636422-88c3-3400-406f-7e63a027fe17"
         alt=""
         class="image-65"
+        onClick={props.onClose}
       />
     </Container>
   );
-};
+}
+
+class DiscordBanner extends React.Component {
+  state = {
+    isOpen: true,
+  };
+
+  onClose() {
+    this.setState({
+      isOpen: false,
+    });
+  }
+
+  render() {
+    const { isOpen } = this.state;
+
+    return isOpen ? <DiscordBannerDumb onClose={() => this.onClose()} /> : null;
+  }
+}
 
 export default DiscordBanner;
