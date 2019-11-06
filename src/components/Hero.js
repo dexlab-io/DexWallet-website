@@ -47,6 +47,21 @@ const Hero = () => {
                 />
               </a>
             </div>
+            <div className="storebutton discordButtonMobile">
+              <a
+                onClick={() => {
+                  mixpanel.track('Buy Crypto Mobile CTA');
+                }}
+                className="storebutton"
+                href="https://discord.gg/eJTYNUF"
+              >
+                <img
+                  src="img/buycrypto.svg"
+                  height="50"
+                  alt="Buy Cyrpto Button"
+                />
+              </a>
+            </div>
             {/* <div className="storebutton"><a
                                 href="https://play.google.com/store/apps/details?id=io.dexlab.dexwallet">
                                 <img src="/img/playStore.png" height="55"></img>
