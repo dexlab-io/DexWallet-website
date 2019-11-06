@@ -135,17 +135,17 @@ class Menu extends React.Component {
             >
               Whitelabel
             </Link>
-            <a
+            <Link
               onClick={() => {
                 mixpanel.track('menu link BuyCrypto');
               }}
               className="buyCryptoButton desktop"
               target="_blank"
-              href="https://buy.moonpay.io/?defaultCurrencyCode=ETH&colorCode=%000&apiKey=pk_live_luey2OpUFw5tc4fzYvYwwkXXmfwjZF9"
+              to="/buycrypto"
               rel="noopener noreferrer"
             >
               Buy Crypto
-            </a>
+            </Link>
             {/* <Link className="desktop headerButton" to="/pro/">
               Pro
             </Link> */}
