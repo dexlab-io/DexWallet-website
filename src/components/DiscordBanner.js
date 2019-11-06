@@ -101,12 +101,13 @@ function DiscordBannerDumb(props) {
             mixpanel.track('Join Discord');
           }}
         >
-          <Sub>Meet among the smartes people on DeFi!</Sub>
+          <Sub>Meet the smartest people in DeFi!</Sub>
         </A>
       </TextContainer>
       <Close
         src="https://assets.website-files.com/5c73e3cf2d05ce73f79a3d10/5d8dddc086d4c075ee18cdff_Group.svg"
         width="14"
+        height="14"
         data-w-id="b6636422-88c3-3400-406f-7e63a027fe17"
         alt=""
         class="image-65"
