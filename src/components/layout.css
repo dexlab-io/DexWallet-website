@@ -248,6 +248,10 @@ button.menuItem:focus {
   animation: fadein 5s;
 }
 
+.discordButtonMobile {
+  display: none !important;
+}
+
 .animatedTitle {
   -webkit-animation: fadein 3s;
   /* Safari, Chrome and Opera > 12.1 */
@@ -1062,6 +1066,11 @@ button.newsletterButton {
   .storebutton {
     margin-right: 0;
   }
+
+  .discordButtonMobile {
+    margin-top: 10px;
+  }
+
   /* BIG PHONE */
   .bigPhone {
     width: 70%;
