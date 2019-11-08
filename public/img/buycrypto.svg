@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="135px" height="40px" viewBox="0 0 135 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>buycrypto</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="buycrypto">
+            <path d="M130.197,40 L4.729,40 C2.122,40 0,37.872 0,35.267 L0,4.726 C0,2.12 2.122,0 4.729,0 L130.197,0 C132.803,0 135,2.12 135,4.726 L135,35.267 C135,37.872 132.803,40 130.197,40 L130.197,40 Z" id="Path" fill="#A6A6A6" fill-rule="nonzero"></path>
+            <path d="M134.032,35.268 C134.032,37.384 132.318,39.098 130.198,39.098 L4.729,39.098 C2.61,39.098 0.89,37.384 0.89,35.268 L0.89,4.725 C0.89,2.61 2.61,0.89 4.729,0.89 L130.197,0.89 C132.318,0.89 134.032,2.61 134.032,4.725 L134.032,35.268 L134.032,35.268 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <text id="Buy-Crypto" fill="#000000" font-family="Rubik-Bold, Rubik" font-size="20" font-weight="bold">
+                <tspan x="11" y="27">Buy Crypto</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
