@@ -24,7 +24,7 @@ const Container = styled.div`
   flex-direction: row;
   color: #fff;
 
-  @media (max-width: 926px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
