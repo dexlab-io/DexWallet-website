@@ -519,6 +519,46 @@ video.heroVid {
   text-align: center;
 }
 
+.margintop {
+  margin-top: 60px;
+}
+
+/* BUY CRYPTO PAGE */
+
+.buycryptoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: var(--almost-black);
+  padding: 6% 6%;
+  height: 500px;
+}
+
+.iframe {
+  background: #000000;
+  flex-grow: 1;
+  height: 500px;
+  margin-right: 2%;
+}
+
+.buycryptoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  color: white;
+  flex-grow: 1;
+  margin-left: 2%;
+  padding: 2% 0 0 0;
+  text-align: center;
+}
+
+.sm\:bg-grey-lighter {
+  background-color: #000000 !important;
+}
+
 .wlButton {
   padding: 1.2rem;
   display: flex;
@@ -1152,5 +1192,40 @@ button.newsletterButton {
     font-size: var(--text-medium);
     font-weight: 500;
     text-align: center;
+  }
+
+  /* BUY CRYPTO PAGE */
+  .buycryptoContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background: var(--almost-black);
+  }
+
+  .iframe {
+    width: 100%;
+    background: #000000;
+    height: 100vh;
+    margin-top: 0vh;
+  }
+
+  .buycryptoContent {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 0;
+    padding: 0; */
+    display: none;
+  }
+
+  .sm\:bg-grey-lighter {
+    background-color: #000000 !important;
   }
 }
