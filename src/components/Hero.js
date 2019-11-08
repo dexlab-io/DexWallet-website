@@ -38,7 +38,7 @@ const Hero = () => {
                   mixpanel.track('Discord Mobile CTA');
                 }}
                 className="storebutton"
-                href="https://discord.gg/eJTYNUF"
+                href="/discord"
               >
                 <img
                   src="img/discordbutton.svg"
@@ -53,7 +53,7 @@ const Hero = () => {
                   mixpanel.track('Buy Crypto Mobile CTA');
                 }}
                 className="storebutton"
-                href="https://discord.gg/eJTYNUF"
+                href="/buycrypto"
               >
                 <img
                   src="img/buycrypto.svg"
