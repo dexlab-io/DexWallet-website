@@ -1196,21 +1196,22 @@ button.newsletterButton {
 
   /* BUY CRYPTO PAGE */
   .buycryptoContainer {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
     background: var(--almost-black);
-    height: 1000px;
   }
 
   .iframe {
+    width: 100%;
     background: #000000;
-    height: 600px;
-    margin-top: -100px;
+    height: 100vh;
+    margin-top: 0vh;
   }
 
   .buycryptoContent {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -1220,7 +1221,8 @@ button.newsletterButton {
     text-align: center;
     margin-top: 50px;
     margin-left: 0;
-    padding: 0;
+    padding: 0; */
+    display: none;
   }
 
   .sm\:bg-grey-lighter {

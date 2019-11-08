@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 class buycrypto extends Component {
   render() {
     return (
-      <Layout>
+      <div>
         <Seo
           title={config.siteName}
           description={config.description}
@@ -53,7 +53,7 @@ class buycrypto extends Component {
             </h2>
           </div>
         </div>
-      </Layout>
+      </div>
     );
   }
 }
