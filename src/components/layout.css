@@ -965,7 +965,7 @@ button.newsletterButton {
 
 /* Mobile  */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 1.6rem;
     line-height: 2rem;
@@ -1101,6 +1101,7 @@ button.newsletterButton {
     align-items: center;
   }
   .storeButtonContainer {
+    flex-direction: column;
     margin: 5% 0;
   }
   .storebutton {
