@@ -17,7 +17,16 @@ export default class HTML extends React.Component {
             <meta httpEquiv="cache-control" content="no-cache" />
             <meta httpEquiv="expires" content="0" />
             <meta httpEquiv="pragma" content="no-cache" />
-            <title>DexWallet - The only Wallet you need by Dexlab</title>
+            <meta property="og:title" content="Dexwallet" />
+            <meta property="og:description" content="Dexwallet - The mobile wallet for decentralized finance" />
+            <meta property="og:image" content="/images/preview.png" />
+            <meta property="og:url" content="https://dexwallet.io/">
+            <meta name="twitter:title" content="Dexwallet" />           
+            <meta property="og:title" content="Dexwallet" />
+            <meta name="twitter:description" content="Dexwallet - The mobile wallet for decentralized finance">
+            <meta name="twitter:image" content="/images/preview.png">
+            <meta name="twitter:card" content="summary_large_image"></meta>
+            <title>Dexwallet - The mobile wallet for decentralized finance</title>
 
             {/* Add custom css or scripts here */}
             <script src="https://medium-widget.pixelpoint.io/widget.js" />
