@@ -6,7 +6,7 @@ export default class HTML extends React.Component {
   render() {
     return (
       <MixpanelProvider>
-        <html {...this.props.htmlAttributes}>
+        <html {...this.props.htmlAttributes} lang="en">
           <head>
             <meta charSet="utf-8" />
             <meta httpEquiv="x-ua-compatible" content="ie=edge" />
