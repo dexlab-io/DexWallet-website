@@ -764,10 +764,7 @@ const TermsAndConditionMain = () => (
           </ol>
         </div>
         Please make sure to consult our{' '}
-        <Link to="https://www.dexwallet.io/privacy-policy/">
-          Privacy Policy
-        </Link>
-        .
+        <Link to="/privacy-policy/">Privacy Policy</Link>.
       </div>
     </Container>
   </React.Fragment>
