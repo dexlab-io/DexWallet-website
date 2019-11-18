@@ -11,7 +11,7 @@ const footerMenu = () => {
           mixpanel.track('Footerlink Terms and Conditions');
         }}
         className="menuItem desktop"
-        href="terms-and-conditions.html"
+        href="https://www.dexwallet.io/terms-and-conditions/"
       >
         Terms & Conditions
       </a>
@@ -20,7 +20,7 @@ const footerMenu = () => {
           mixpanel.track('Footerlink Privacy');
         }}
         className="menuItem desktop"
-        href="privacy-policy.html"
+        href="https://www.dexwallet.io/privacy-policy/"
       >
         Privacy
       </a>

@@ -3,15 +3,15 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 
-  <script src="https://js.stripe.com/v3" />;
+<script src="https://js.stripe.com/v3" />;
 
 class buycrypto extends Component {
   render() {
     return (
       <div>
         <Seo
-          title={config.siteName}
-          description={config.description}
+          title={config.titleBuy}
+          description={config.BuyDescription}
           url={`${config.siteUrl}`}
           image={config.image}
         />

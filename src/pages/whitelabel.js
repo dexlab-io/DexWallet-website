@@ -12,8 +12,8 @@ class WhitelabelContent extends Component {
     return (
       <Layout>
         <Seo
-          title={config.siteName}
-          description={config.description}
+          title={config.titleWhitelabel}
+          description={config.WhitelabelDescription}
           url={`${config.siteUrl}`}
           image={config.image}
         />

@@ -11,8 +11,8 @@ export default class PrivacyPolicy extends React.Component {
     return (
       <Layout>
         <Seo
-          title={config.siteName}
-          description={config.description}
+          title={config.titlePrivacy}
+          description={config.PrivacyDescription}
           url={`${config.siteUrl}`}
           image={config.image}
         />

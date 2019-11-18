@@ -16,15 +16,15 @@ import SocialProof from '../components/SocialProof';
 // import NativedApps from '../components/NativedApps';
 // import Quotes from '../components/Quotes';
 // import Staking from '../components/Staking';
-  <script src="https://js.stripe.com/v3" />;
+<script src="https://js.stripe.com/v3" />;
 
 class Pro extends Component {
   render() {
     return (
       <Layout>
         <Seo
-          title={config.siteName}
-          description={config.description}
+          title={config.titlePro}
+          description={config.BuyDescription}
           url={`${config.siteUrl}`}
           image={config.image}
         />
