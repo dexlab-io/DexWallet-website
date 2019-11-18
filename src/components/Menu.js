@@ -79,6 +79,7 @@ class Menu extends React.Component {
               }}
               className="menuItem desktop"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://defitracker.io/"
             >
               Defitracker.io
@@ -89,6 +90,7 @@ class Menu extends React.Component {
               }}
               className="menuItem desktop"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.dexpay.me"
             >
               Dexpay.me

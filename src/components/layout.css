@@ -320,6 +320,11 @@ button.menuItem:focus {
   animation: fadein 7s;
 }
 
+.screenreader {
+  position: absolute;
+  left: -9999px;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
