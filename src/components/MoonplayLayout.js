@@ -13,7 +13,6 @@ const MoonplayLayout = props => {
           src={props.url}
           alt="moonpay picture"
           border="0"
-          loading="lazy"
         />
       </span>
       <span className="columnText">

@@ -9,7 +9,6 @@ const PictureRight = props => {
           src={props.url}
           alt={props.alt}
           border="0"
-          loading="lazy"
         />
       </span>
       <span className="columnText">
