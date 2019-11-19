@@ -26,17 +26,12 @@ const Integrations = () => {
         <h5>Collateralize Eth and borrow DAI in exchange</h5>
       </span>
 
-      <span className="protocol stakeCapital">
+      <span className="protocol bZx">
         <span className="companyLogo">
-          <img
-            src="/img/stakeCapital.svg"
-            alt="iphone"
-            border="0"
-            height="40"
-          />
+          <img src="/img/bzx.svg" alt="BzX" border="0" height="40" />
         </span>
-        <h2>StakeCapital</h2>
-        <h5>Stake LOOM to the pool and earn delegated PoS fees</h5>
+        <h2>Fulcrum</h2>
+        <h5>The most simple and powerful way to lend and margin trade</h5>
       </span>
     </span>
   );
