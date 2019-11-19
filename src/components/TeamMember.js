@@ -7,7 +7,7 @@ const TeamMember = props => {
         <img
           className="membersupportPicture"
           src={props.url}
-          alt="iphone"
+          alt="members"
           border="0"
           loading="lazy"
         />

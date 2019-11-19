@@ -11,7 +11,7 @@ const MoonplayLayout = props => {
         <img
           className="supportPicture"
           src={props.url}
-          alt="iphone"
+          alt="moonpay picture"
           border="0"
           loading="lazy"
         />

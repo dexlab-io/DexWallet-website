@@ -7,7 +7,7 @@ const PictureRight = props => {
         <img
           className="supportPicture"
           src={props.url}
-          alt="iphone"
+          alt="support picture"
           border="0"
           loading="lazy"
         />

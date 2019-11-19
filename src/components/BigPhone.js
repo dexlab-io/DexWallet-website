@@ -11,7 +11,12 @@ const BigPhone = () => {
         muted
         loop
       >
-        <source src="/img/bigPhoneVideo.mp4" type="video/mp4" width="40%" />
+        <source
+          src="/img/bigPhoneVideo.mp4"
+          type="video/mp4"
+          width="40%"
+          alt="preview video of the app"
+        />
       </video>{' '}
     </span>
   );

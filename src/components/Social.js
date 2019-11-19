@@ -7,7 +7,7 @@ const Social = () => {
         <img
           className="supportPicture"
           src="/img/discord.svg"
-          alt="iphone"
+          alt="discord"
           border="0"
           height="20"
         />
@@ -16,7 +16,7 @@ const Social = () => {
         <img
           className="supportPicture"
           src="/img/twitter.svg"
-          alt="iphone"
+          alt="twitter"
           border="0"
           height="20"
         />
@@ -25,7 +25,7 @@ const Social = () => {
         <img
           className="supportPicture"
           src="/img/telegram.svg"
-          alt="iphone"
+          alt="telegram"
           border="0"
           height="20"
         />
@@ -34,7 +34,7 @@ const Social = () => {
         <img
           className="supportPicture"
           src="/img/medium.svg"
-          alt="iphone"
+          alt="medium"
           border="0"
           height="20"
         />
@@ -43,7 +43,7 @@ const Social = () => {
         <img
           className="supportPicture"
           src="/img/github.svg"
-          alt="iphone"
+          alt="github"
           border="0"
           height="20"
         />

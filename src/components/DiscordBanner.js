@@ -84,7 +84,7 @@ function DiscordBannerDumb(props) {
           src="../img/DiscordLogoFull.png"
           width="147.06"
           height="50"
-          alt="Built on Ethereum"
+          alt="Discord Logo"
         />
       </A>
       <TextContainer>
