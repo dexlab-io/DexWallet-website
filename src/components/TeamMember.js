@@ -7,7 +7,7 @@ const TeamMember = props => {
         <img
           className="membersupportPicture"
           src={props.url}
-          alt="members"
+          alt={props.alt}
           border="0"
           loading="lazy"
         />
