@@ -1,7 +1,5 @@
 module.exports = {
   DEBUG: process.env.NODE_ENV === 'development',
-
-  siteName: 'The mobile wallet for decentralized finance',
   titlePrivacy: 'Privacy',
   titlePro: 'Dexwallet PRO',
   titleTerms: 'Terms & Conditions',
