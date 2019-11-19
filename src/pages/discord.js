@@ -1,4 +1,5 @@
 import React from 'react';
+import Seo from '../components/Seo';
 
 class Discord extends React.Component {
   componentDidMount() {
