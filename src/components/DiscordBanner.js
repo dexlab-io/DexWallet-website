@@ -97,7 +97,7 @@ function DiscordBannerDumb(props) {
           <Title>Join the conversation!</Title>
         </A>
         <A
-          href="https://discord.gg/eJTYNUF"
+          href="https://www.dexwallet.io/discord/"
           onClick={() => {
             mixpanel.track('Join Discord');
           }}
