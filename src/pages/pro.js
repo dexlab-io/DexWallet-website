@@ -27,6 +27,7 @@ class Pro extends Component {
           description={config.BuyDescription}
           url={`${config.siteUrl}`}
           image={config.image}
+          keywords={config.keywordsPro}
         />
         <BigX />
         <ProHero

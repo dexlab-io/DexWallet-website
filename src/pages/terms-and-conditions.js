@@ -15,6 +15,7 @@ export default class TermsConditions extends React.Component {
           description={config.TermsDescription}
           url={`${config.siteUrl}`}
           image={config.image}
+          keywords={config.keywordsTerms}
         />
         <TermsAndConditionDescription />
         <Newsletter />

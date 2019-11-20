@@ -14,6 +14,7 @@ class Discord extends React.Component {
         description={config.DiscordDescription}
         url={`${config.siteUrl}`}
         image={config.image}
+        keywords={config.keywordsDiscord}
       >
         <h1>Redirecting to discord...</h1>
       </Seo>

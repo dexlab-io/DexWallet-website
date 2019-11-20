@@ -29,4 +29,21 @@ module.exports = {
 
   backgroundColor: '#e0e0e0',
   themeColor: '#75b1e2;',
+
+  keywords:
+    'ethereum, ethereum wallet, wallet, crypto wallet, decentralized app, dapps',
+  keywordsDiscord:
+    'Discord, Dexwallet Discord, ethereum, ethereum wallet, wallet, crypto wallet, decentralized app, dapps',
+  keywordsBuy:
+    'buy crypto, buy ethereum, DAI, buy DAI, ethereum, decentralized app, dapps',
+  keywordsContact:
+    'Dexwallet contacts, dexwallet contact, ethereum, ethereum wallet, wallet, crypto wallet, decentralized app, dapps',
+  keywordsPrivacy:
+    'Dexwallet privacy, dexwallet privacy policy, ethereum, ethereum wallet, wallet, crypto wallet, decentralized app, dapps',
+  keywordsPro:
+    'Dexwallet contacts, dexwallet contact, ethereum, ethereum wallet, wallet, crypto wallet, decentralized app, dapps',
+  keywordsTerms:
+    'Dexwallet terms, dexwallet conditions, ethereum, ethereum wallet, wallet, crypto wallet, decentralized app, dapps',
+  keywordsWhitelabel:
+    'Dexwallet whitelabel, dexwallet white label, ethereum, ethereum wallet, wallet, crypto wallet, decentralized app, dapps',
 };

@@ -15,6 +15,7 @@ export default class PrivacyPolicy extends React.Component {
           description={config.PrivacyDescription}
           url={`${config.siteUrl}`}
           image={config.image}
+          keywords={config.keywordsPrivacy}
         />
         <PrivacyPolicyMain />
         <Newsletter />

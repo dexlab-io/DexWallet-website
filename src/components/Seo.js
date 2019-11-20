@@ -14,7 +14,7 @@ const getSchemaOrgJSONLD = ({ url, title }) => [
   },
 ];
 
-const Seo = ({ title, description, url, image }) => {
+const Seo = ({ title, description, url, image, keywords }) => {
   const pageTitle = `${title} - ${config.siteName}`;
 
   const schemaOrgJSONLD = getSchemaOrgJSONLD({
@@ -30,6 +30,7 @@ const Seo = ({ title, description, url, image }) => {
       {/* <title>{pageTitle}</title> */}
       <meta name="description" content={description} />
       <meta name="image" content={image} />
+      <meta name="keywords" content={keywords} />
 
       {/* Schema.org tags */}
       <script type="application/ld+json">
