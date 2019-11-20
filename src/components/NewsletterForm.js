@@ -17,6 +17,9 @@ const Newsletterform = () => {
         >
           <h2>Get our last updates</h2>
           <section className="newsletterField">
+            <label for="email" class="screenreader">
+              email
+            </label>
             <input
               type="email"
               placeholder="Your@email.here"

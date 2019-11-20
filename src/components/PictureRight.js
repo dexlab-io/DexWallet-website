@@ -7,9 +7,8 @@ const PictureRight = props => {
         <img
           className="supportPicture"
           src={props.url}
-          alt="iphone"
+          alt={props.alt}
           border="0"
-          loading="lazy"
         />
       </span>
       <span className="columnText">

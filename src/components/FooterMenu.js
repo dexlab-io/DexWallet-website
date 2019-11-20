@@ -11,7 +11,7 @@ const footerMenu = () => {
           mixpanel.track('Footerlink Terms and Conditions');
         }}
         className="menuItem desktop"
-        href="terms-and-conditions.html"
+        href="/terms-and-conditions/"
       >
         Terms & Conditions
       </a>
@@ -20,7 +20,7 @@ const footerMenu = () => {
           mixpanel.track('Footerlink Privacy');
         }}
         className="menuItem desktop"
-        href="privacy-policy.html"
+        href="/privacy-policy/"
       >
         Privacy
       </a>
@@ -50,6 +50,7 @@ const footerMenu = () => {
         }}
         className="menuItem desktop"
         target="_blank"
+        rel="noopener noreferrer"
         href="https://drive.google.com/drive/folders/1JGgJEmAmENdB95PidPJoxBjrbHHaiZro?usp=sharing"
       >
         Presskit

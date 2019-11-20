@@ -82,8 +82,9 @@ function DiscordBannerDumb(props) {
       >
         <IMG
           src="../img/DiscordLogoFull.png"
+          width="147.06"
           height="50"
-          alt="Built on Ethereum"
+          alt="Discord Logo"
         />
       </A>
       <TextContainer>
@@ -109,7 +110,7 @@ function DiscordBannerDumb(props) {
         width="14"
         height="14"
         data-w-id="b6636422-88c3-3400-406f-7e63a027fe17"
-        alt=""
+        alt="close"
         class="image-65"
         onClick={props.onClose}
       />

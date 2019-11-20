@@ -12,8 +12,8 @@ class WhitelabelContent extends Component {
     return (
       <Layout>
         <Seo
-          title={config.siteName}
-          description={config.description}
+          title={config.titleWhitelabel}
+          description={config.WhitelabelDescription}
           url={`${config.siteUrl}`}
           image={config.image}
         />
@@ -33,7 +33,12 @@ class WhitelabelContent extends Component {
           </span>
           <span className="singleOffer pro">
             <span className="companyLogo">
-              <img src="/img/pro.png" alt="iphone" border="0" height="150" />
+              <img
+                src="/img/pro.png"
+                alt="company logo"
+                border="0"
+                height="150"
+              />
             </span>
             <h2>PRO</h2>
             <h5>
@@ -46,7 +51,7 @@ class WhitelabelContent extends Component {
             <span className="companyLogo">
               <img
                 src="/img/custom.png"
-                alt="iphone"
+                alt="custom wallet"
                 border="0"
                 height="150px"
               />

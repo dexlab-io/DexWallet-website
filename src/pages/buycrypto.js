@@ -3,15 +3,15 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 
-  <script src="https://js.stripe.com/v3" />;
+<script src="https://js.stripe.com/v3" />;
 
 class buycrypto extends Component {
   render() {
     return (
       <div>
         <Seo
-          title={config.siteName}
-          description={config.description}
+          title={config.titleBuy}
+          description={config.BuyDescription}
           url={`${config.siteUrl}`}
           image={config.image}
         />
@@ -42,7 +42,12 @@ class buycrypto extends Component {
             </iframe>
           </div>
           <div className="buycryptoContent">
-            <img src="/img/buycrypto.png" alt="Xlogo" width="40%" border="0" />
+            <img
+              src="/img/buycrypto.png"
+              alt="buy crypto"
+              width="40%"
+              border="0"
+            />
             <h1 className="sectionTitle">
               Buy Crypto using your Credit Card or Apple Pay
             </h1>

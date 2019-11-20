@@ -11,8 +11,8 @@ export default class TermsConditions extends React.Component {
     return (
       <Layout>
         <Seo
-          title={config.siteName}
-          description={config.description}
+          title={config.titleTerms}
+          description={config.TermsDescription}
           url={`${config.siteUrl}`}
           image={config.image}
         />
