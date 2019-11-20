@@ -27,7 +27,7 @@ const Seo = ({ title, description, url, image }) => {
   return (
     <Helmet>
       {/* General tags */}
-      <title>{pageTitle}</title>
+      {/* <title>{pageTitle}</title> */}
       <meta name="description" content={description} />
       <meta name="image" content={image} />
 
