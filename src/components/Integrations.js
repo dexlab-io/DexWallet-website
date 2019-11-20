@@ -3,13 +3,15 @@ import React from 'react';
 const Integrations = () => {
   return (
     <span className="integrations">
-      <span className="protocol uniswap">
+
+<span className="protocol bZx">
         <span className="companyLogo">
-          <img src="/img/uniswap.svg" alt="iphone" border="0" height="40" />
+          <img src="/img/bzx.svg" alt="BzX" border="0" height="40" />
         </span>
-        <h2>Uniswap</h2>
-        <h5>Provide and manage assets on liquidity pools</h5>
+        <h2>Fulcrum</h2>
+        <h5>The most simple and powerful way to lend and margin trade</h5>
       </span>
+    </span>
       <span className="protocol compound">
         <span className="companyLogo">
           <img src="/img/compound.svg" alt="iphone" border="0" height="40" />
@@ -25,15 +27,15 @@ const Integrations = () => {
         <h2>MakerDAO</h2>
         <h5>Collateralize Eth and borrow DAI in exchange</h5>
       </span>
+            <span className="protocol uniswap">
+            <span className="companyLogo">
+              <img src="/img/uniswap.svg" alt="iphone" border="0" height="40" />
+            </span>
+            <h2>Uniswap</h2>
+            <h5>Provide and manage assets on liquidity pools</h5>
+          </span>
 
-      <span className="protocol bZx">
-        <span className="companyLogo">
-          <img src="/img/bzx.svg" alt="BzX" border="0" height="40" />
-        </span>
-        <h2>Fulcrum</h2>
-        <h5>The most simple and powerful way to lend and margin trade</h5>
-      </span>
-    </span>
+
   );
 };
 
