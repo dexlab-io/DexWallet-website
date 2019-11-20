@@ -17,16 +17,17 @@ const Newsletterform = () => {
         >
           <h2>Get our last updates</h2>
           <section className="newsletterField">
-            <label for="email" class="screenreader">
-              email
-            </label>
             <input
+              id="mce-EMAIL"
               type="email"
               placeholder="Your@email.here"
               name="EMAIL"
               className="required email newsletterInput"
-              id="mce-EMAIL"
             />
+            <label for="mce-EMAIL" class="screenreader">
+              email
+            </label>
+
             <div id="mce-responses" className="clear">
               <div
                 className="response"
