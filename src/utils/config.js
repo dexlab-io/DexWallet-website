@@ -5,7 +5,7 @@ module.exports = {
   titleTerms: 'Terms & Conditions',
   titleWhitelabel: 'Dexwallet Whitelabel',
   titleBuy: 'Buy Cryptocurrencies',
-  titleDiscord: 'Discord',
+  titleDiscord: 'Dexwallet Discord Channel',
 
   siteName: 'The mobile wallet for decentralized finance',
   author: 'Dexwallet.io',
@@ -15,7 +15,7 @@ module.exports = {
   BuyDescription: 'Buy Crypto using your Credit Card or Apple Pay',
   PrivacyDescription: 'Privacy Policy',
   TermsDescription: 'Terms and Condition of the service',
-  DiscordDescription: 'Terms and Condition of the service',
+  DiscordDescription: 'Redirecting to Dexwallet Discord Channel',
   WhitelabelDescription:
     'All the basic features you need on the wallet, in your hand since day zero',
   siteUrl: 'https://www.dexwallet.io/',
