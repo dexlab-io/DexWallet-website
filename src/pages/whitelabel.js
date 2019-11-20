@@ -16,6 +16,7 @@ class WhitelabelContent extends Component {
           description={config.WhitelabelDescription}
           url={`${config.siteUrl}`}
           image={config.image}
+          keywords={config.keywordsWhitelabel}
         />
         <Whitelabel />
         <WLFeaturesList />

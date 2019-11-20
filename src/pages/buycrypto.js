@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import config from '../utils/config';
 import Seo from '../components/Seo';
-import Layout from '../components/Layout';
-
 <script src="https://js.stripe.com/v3" />;
 
 class buycrypto extends Component {
@@ -14,6 +12,7 @@ class buycrypto extends Component {
           description={config.BuyDescription}
           url={`${config.siteUrl}`}
           image={config.image}
+          keywords={config.keywordsBuy}
         />
 
         {/* <span className="whitelabelCTAtitle margintop">

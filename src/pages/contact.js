@@ -39,6 +39,7 @@ export default class ContactPage extends React.Component {
           title="Contact"
           description="Contact us today!"
           url={`${config.siteUrl}`}
+          keywords={config.keywordsContact}
         />
         <h1>Contact</h1>
         <form

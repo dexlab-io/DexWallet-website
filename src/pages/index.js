@@ -27,6 +27,7 @@ export default class IndexPage extends React.Component {
           description={config.description}
           url={`${config.siteUrl}`}
           image={config.image}
+          keywords={config.keywords}
         />
         <BigX />
         <Hero />
