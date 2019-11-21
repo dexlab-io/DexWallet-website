@@ -13,7 +13,7 @@ import SavingAccount from '../components/SavingAccount';
 import Payments from '../components/Payments';
 import NativedApps from '../components/NativedApps';
 import WlFeatures from '../components/WlFeatures';
-import MediumPosts from '../components/MediumPosts';
+// import MediumPosts from '../components/MediumPosts';
 import NewsletterForm from '../components/NewsletterForm';
 import MoonPay from '../components/MoonPay';
 import TeamMember from '../components/TeamMember';
@@ -72,7 +72,7 @@ export default class IndexPage extends React.Component {
         />
         <Whitelabel />
         <WlFeatures />
-        <MediumPosts />
+        {/* <MediumPosts /> */}
         <NewsletterForm />
       </Layout>
     );
