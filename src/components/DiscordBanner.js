@@ -102,7 +102,7 @@ function DiscordBannerDumb(props) {
             mixpanel.track('Join Discord');
           }}
         >
-          <Sub>Meet the smartest people in DeFi!</Sub>
+          <Sub>Meet the top founders of DeFi projects!</Sub>
         </A>
       </TextContainer>
       <Close
