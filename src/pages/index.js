@@ -17,6 +17,7 @@ import WlFeatures from '../components/WlFeatures';
 import NewsletterForm from '../components/NewsletterForm';
 import MoonPay from '../components/MoonPay';
 import TeamMember from '../components/TeamMember';
+import TeamVideo from '../components/TeamVideo';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -48,6 +49,7 @@ export default class IndexPage extends React.Component {
           url="/img/tom.jpg"
           alt="Tom Bean"
         />
+        <TeamVideo />
         <SavingAccount />
         <TeamMember
           name="Kain Warwick - Founder Synthetix"
