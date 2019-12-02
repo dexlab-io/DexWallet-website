@@ -1249,3 +1249,9 @@ button.newsletterButton {
     background-color: #000000 !important;
   }
 }
+
+@media (max-width: 400px) {
+  .noshow {
+    display: none;
+  }
+}
