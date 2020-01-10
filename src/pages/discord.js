@@ -4,7 +4,7 @@ import config from '../utils/config';
 
 class Discord extends React.Component {
   componentDidMount() {
-    window.location.replace('https://discord.gg/QHBTnpt');
+    window.location.replace('https://discord.gg/AnsGw6N');
   }
 
   render() {
