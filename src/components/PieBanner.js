@@ -85,9 +85,9 @@ function PieBannerDumb(props) {
         }}
       >
         <IMG
-          src="../img/pielogo.png"
+          src="../img/pielogo2.png"
           width="147"
-          height="48"
+          height="29"
           alt="piedao Logo"
         />
       </A>
@@ -98,7 +98,7 @@ function PieBannerDumb(props) {
             mixpanel.track('Join Pie');
           }}
         >
-          <Title>Join the PieDAO!</Title>
+          <Title>Join the Pie DAO!</Title>
         </A>
         <A
           href="piedao.org"
