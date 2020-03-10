@@ -93,7 +93,7 @@ function PieBannerDumb(props) {
       </A>
       <TextContainer>
         <A
-          href="piedao.org"
+          href="https://piedao.org/"
           onClick={() => {
             mixpanel.track('Join Pie');
           }}
