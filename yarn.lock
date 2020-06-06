@@ -5001,6 +5001,13 @@ gatsby-plugin-manifest@^2.0.25:
     bluebird "^3.5.0"
     sharp "^0.21.3"
 
+gatsby-plugin-mixpanel@^3.1.0:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mixpanel/-/gatsby-plugin-mixpanel-3.1.6.tgz#3f8bcfdcdcca17e06fe79317b36c6e1e936e89d2"
+  integrity sha512-GjvtcoGzkjyFE2eopRxQHpD++91IG3BHkDrblMRocuxgARJS+yDLMEwTtQmBiNf0wDxixBkLyDn18tvRXpX4nQ==
+  dependencies:
+    mixpanel-browser "^2.35.0"
+
 gatsby-plugin-nprogress@^2.0.10:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.0.10.tgz#4d60e09515270c86b956497e4cc66cede5565db7"
@@ -7491,6 +7498,11 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
+mixpanel-browser@^2.35.0:
+  version "2.37.0"
+  resolved "https://registry.yarnpkg.com/mixpanel-browser/-/mixpanel-browser-2.37.0.tgz#31059356179af1c62155e6b04bdf6bb4208f3e5d"
+  integrity sha512-CogDBY07bt6lUBdcD5Qk0GCDGys/lSW4TcxPJWRFbKjCxvUV1mdHeZyAkfpKfWrm/gWp8kDHmVUIOJ5ALjdbqQ==
+
 mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
@@ -9314,6 +9326,11 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
   integrity sha512-XzgvowFrwDo6TWcpJ/WTiarb9UI6lhA4PMzS7n1joK3sHfBBBOQHUc0U4u57D6DWO9vHv6lVSWx2Q/Ymfyv4hw==
+
+react-ga@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.7.0.tgz#24328f157f31e8cffbf4de74a3396536679d8d7c"
+  integrity sha512-AjC7UOZMvygrWTc2hKxTDvlMXEtbmA0IgJjmkhgmQQ3RkXrWR11xEagLGFGaNyaPnmg24oaIiaNPnEoftUhfXA==
 
 react-helmet@^5.2.0:
   version "5.2.0"
@@ -11599,9 +11616,9 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
-  integrity sha512-nqHUnMXmBzT0w570r2JpJxfiSD1IzoI+HGVdd3aZ0yNi3ngvQ4jv1dtHt5VGxfI2yj5yqImPhOK4vmIh2xMbGg==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
+  integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
 whatwg-fetch@2.0.3:
   version "2.0.3"
